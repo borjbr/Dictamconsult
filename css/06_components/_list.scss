@@ -1,0 +1,17 @@
+.c-list {
+  counter-reset: my-counter;
+
+  li {
+    counter-increment: my-counter;
+    display: flex;
+    margin-bottom: rem(32px);
+
+    &::before {
+      content: "0" counter(my-counter);
+      padding-right: rem(16px);
+      font-size: rem(40px);
+      line-height: 0.9;
+      min-width: 45px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.o-card-title {
+  @extend .o-container;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 15px);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+    @media (min-width: $screen-md) {
+      left: calc(-100% + 15px);
+    }
+  }
+
+  &__inner {
+    @extend .o-row;
+  }
+
+  &__content {
+    @extend .o-col\@xs-12, .o-col\@lg-9;
+
+    @media (max-width: $screen-sm) {
+      padding-right: 0;
+    }
+  }
+
+  &--right {
+    .o-card-title__inner {
+      @extend .o-justify-content-end;
+    }
+
+    @media (min-width: $screen-md) {
+      &::after {
+        left: calc(100% - 15px);
+      }
+    }
+  }
+
+  &--auto {
+    @media (min-width: $screen-md) {
+      .o-card-title__content {
+        flex: 0 0 auto;
+        max-width: auto;
+      }
+    }
+  }
+
+  &--half {
+    .o-card-title__content {
+      padding-right: 0;
+      @extend .o-col\@xs-12, .o-col\@lg-7;
+
+      &--large {
+        @extend .o-col\@xs-12, .o-col\@lg-9;
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}

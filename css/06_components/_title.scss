@@ -1,0 +1,50 @@
+.c-title {
+  p {
+    font-size: rem(16px);
+    font-weight: $regular;
+    color: $color-grey;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      font-size: rem(20px);
+    }
+  }
+
+  h2 {
+    font-size: rem(32px);
+    font-weight: $bold;
+    color: $color-black;
+
+    @media (min-width: $screen-md) {
+      font-size: rem(56px);
+    }
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--inside {
+    h1 {
+      font-size: rem(32px);
+      font-weight: $bold;
+      color: $color-black;
+
+      @media (min-width: $screen-md) {
+        font-size: rem(56px);
+      }
+    }
+
+    h2 {
+      font-size: rem(16px);
+      font-weight: $regular;
+      color: $color-grey;
+      text-transform: uppercase;
+      line-height: 1.8rem;
+
+      @media (min-width: $screen-md) {
+        font-size: rem(20px);
+      }
+    }
+  }
+}

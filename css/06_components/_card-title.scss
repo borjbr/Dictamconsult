@@ -1,0 +1,99 @@
+.c-card-title {
+  background-color: $color-white;
+  position: relative;
+
+  @media (max-width: $screen-sm) {
+    margin-top: rem(32px);
+    padding: rem(24px) rem(24px) rem(24px) rem(32px);
+  }
+  @media (min-width: $screen-sm) {
+    padding: rem(24px);
+  }
+
+  @media (min-width: $screen-md) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: rem(32px);
+  }
+
+  &__title {
+    padding-bottom: rem(16px);
+
+    @media (min-width: $screen-md) {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding-bottom: 0;
+      padding-right: rem(32px);
+    }
+  }
+
+  &__content {
+    @media (min-width: $screen-md) {
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2;
+
+      p {
+        padding-top: rem(20px);
+        color: $color-grey;
+
+        &:first-of-type { padding-top: rem(40px); }
+      }
+    }
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    width: $line;
+    height: 100%;
+    background-color: $color-primary;
+
+    @media (min-width: $screen-md) {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &--right {
+    @media (min-width: $screen-md) {
+      &::before {
+        left: 0;
+        right: auto;
+      }
+
+      .c-title {
+        text-align: right;
+      }
+    }
+  }
+
+  &--half {
+    @media (min-width: $screen-md) {
+      &::before {
+        left: 0;
+        right: auto;
+      }
+
+      .c-title {
+        text-align: left;
+        h2 {
+          font-size: rem(32px);
+        }
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      .c-title {
+        h2 {
+          font-size: rem(56px);
+        }
+      }
+    }
+  }
+}

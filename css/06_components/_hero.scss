@@ -1,0 +1,180 @@
+.c-hero {
+  width: 100%;
+  height: calc(100vh + 80px);
+  background-color: $color-white;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+
+    @media (min-width: $screen-xl) {
+      left: 0;
+      right: 0;
+      width: 100%;
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  &__inner {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    max-width: 900px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: $screen-md) {
+      top: 15%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: rem(16px);
+
+    @media (min-width: $screen-md) {
+      margin-bottom: rem(36px);
+    }
+
+    h2 {
+      font-size: rem(32px);
+      font-weight: $bold;
+      margin-bottom: rem(32px);
+
+      @media (min-width: $screen-md) {
+        font-size: rem(64px);
+      }
+    }
+
+    p {
+      font-size: rem(20px);
+
+      @media (min-width: $screen-md) {
+        font-size: rem(24px);
+      }
+    }
+  }
+
+  &__button,
+  &__link {
+    text-align: center;
+  }
+
+  &__button {
+    margin-bottom: rem(32px);
+  }
+
+  &__link {
+    a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: $ff-montserrat;
+      font-weight: $thin;
+      font-size: rem(14px);
+      max-width: 300px;
+      height: 46px;
+      background-color: $color-white;
+      margin: auto;
+
+      &:hover {
+        i {
+          &:after {
+            -webkit-animation: rotateLine 3s linear infinite;
+            animation: rotateLine 3s linear infinite;
+          }
+        }
+      }
+    }
+
+    i {
+      width: 20px;
+      height: 20px;
+      font-size: rem(20px);
+      display: block;
+      position: relative;
+      margin-right: rem(16px);
+      color: $color-primary;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 2px dashed $color-primary;
+        background-color: transparent;
+      }
+    }
+  }
+
+  @-webkit-keyframes rotateLine {
+    0% {
+      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translate(-50%, -50%) rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  @keyframes rotateLine {
+    0% {
+      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translate(-50%, -50%) rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  @keyframes bounceDown {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(-30px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(-15px);
+    }
+  }
+
+  @keyframes wheel-up-down {
+    0% {
+      margin-top: 2px;
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      margin-top: 20px;
+      opacity: 0;
+    }
+  }
+}

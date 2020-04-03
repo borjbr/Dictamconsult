@@ -1,0 +1,29 @@
+.c-header {
+  width: 100%;
+  height: 65px;
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: rem(15px);
+  padding-right: rem(15px);
+  position: relative;
+
+  @media (min-width: $screen-md) {
+    height: 80px;
+    padding-left: rem(44px);
+    padding-right: rem(44px);
+  }
+
+  &__logotype {
+    width: 140px;
+
+    @media (min-width: $screen-lg) {
+      width: 200px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

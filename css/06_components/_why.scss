@@ -1,0 +1,57 @@
+.c-why {
+  @extend .o-container;
+  padding-top: rem(190px);
+
+  @media (min-width: $screen-lg) {
+    padding-top: rem(48px);
+  }
+
+  &__inner {
+    @extend .o-row;
+  }
+
+  &__item {
+    @extend .o-col\@xs-12, .o-col\@lg-6;
+  }
+
+  &__item-two {
+    @extend .o-col\@xs-12, .o-col\@lg-5;
+  }
+
+  &__list {
+    @extend .o-row;
+
+    li {
+      @extend .o-col\@xs-12;
+      margin-top: -1px;
+
+      @media (min-width: $screen-lg) {
+        margin-top: 0;
+        margin-bottom: rem(32px);
+      }
+    }
+  }
+
+  &__4 {
+    @extend .o-col\@lg-9, .o-offset\@lg-3;
+  }
+}
+
+// refactory
+:root {
+  .c-why {
+    &__9 {
+      @extend .o-col\@lg-9;
+    }
+
+    &__off3 {
+      @extend .o-offset\@lg-3;
+    }
+
+    &__mt2 {
+      @media (min-width: $screen-lg) {
+        margin-top: rem(32px);
+      }
+    }
+  }
+}

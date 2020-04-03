@@ -1,0 +1,35 @@
+.o-media-contact {
+  margin-top: 50px;
+
+  &__logotype {
+    display: table;
+    width: 100%;
+    padding: 0 0 32px;
+
+    &-img {
+      display: table-cell;
+      width: 153px;
+      padding-right: 16px;
+
+      img {
+        width: 100%;
+        margin-left: -12px;
+      }
+    }
+
+    &-text {
+      display: table-cell;
+      width: auto;
+      vertical-align: middle;
+      padding-right: 16px;
+      line-height: 16px;
+    }
+
+    @media (max-width: $screen-sm) {
+      display: block;
+    }
+    @media (min-width: $screen-sm) {
+      figure { width: 150px; }
+    }
+  }
+}

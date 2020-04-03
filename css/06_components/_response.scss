@@ -1,0 +1,26 @@
+.c-response {
+  width: 100%;
+  border: 1px solid $color-border;
+  background-color: $color-white2;
+  padding: rem(50px);
+  text-align: center;
+  color: $color-success;
+
+  &__icon {
+    padding-bottom: rem(24px);
+
+    i {
+      font-size: rem(70px);
+    }
+  }
+
+  &__title {
+    font-size: rem(20px);
+    font-weight: $regular;
+    padding-bottom: rem(24px);
+  }
+
+  &__content {
+    font-size: rem(16px);
+  }
+}

@@ -1,0 +1,17 @@
+.o-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  &__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  &__content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}

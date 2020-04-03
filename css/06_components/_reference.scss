@@ -1,0 +1,24 @@
+.c-reference {
+  padding-bottom: rem(60px);
+
+  @media (min-width: $screen-lg) {
+    padding-bottom: rem(150px);
+  }
+
+  &__list {
+    @extend .o-container;
+    padding-top: rem(32px);
+
+    @media (min-width: $screen-lg) {
+      padding-top: rem(40px);
+    }
+
+    & > li {
+      margin-bottom: rem(24px);
+
+      @media (min-width: $screen-lg) {
+        margin-bottom: rem(32px);
+      }
+    }
+  }
+}

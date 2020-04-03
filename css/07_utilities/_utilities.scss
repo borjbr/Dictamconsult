@@ -1,0 +1,175 @@
+:root {
+  .u-text-center {
+    text-align: center;
+  }
+
+  .u-text-left {
+    text-align: left;
+  }
+
+  .u-mt2 {
+    margin-top: rem(32px);
+  }
+
+  .u-mb2 {
+    margin-bottom: rem(32px);
+  }
+
+  .u-black {
+    color: $color-black;
+  }
+
+  .u-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .u-text-default {
+    text-transform: inherit;
+  }
+
+  .u-mt1 {
+    margin-top: rem(16px);
+  }
+
+
+  @media (max-width: 992px) {
+    .u-new-card { margin-top: 32px; }
+  }
+  @media (width: 992px) {
+    .u-new-card { margin-top: 0; }
+  }
+
+
+  @media (max-width: 480px) {
+    .u-margin-mobile {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+// Utilidad para ajustar el bloque porqué amaine de la home
+.u-why-amaine {
+
+  @media (max-width: $screen-sm) {
+    .c-background__content { padding-top: 2.875rem; }
+    .c-background__list { margin-bottom: 0; }
+    .c-background--left { padding-bottom: 0; }
+    .u-new-card { margin-top: 0; }
+    .o-card-title::after { display: none; }
+  }
+}
+
+// Utilidad para ajustar el bloque Amaina está dirigido a... de la home
+.u-amaine-managed {
+  @media (max-width: $screen-sm) {
+    .c-background--large img {
+      height: 197px;
+    }
+  }
+}
+
+// Utilidad para ajustar el top del primer bloque de cada subpagina
+.u-top-subpages {
+  @media (max-width: $screen-lg) {
+    .c-background--half {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 40px;
+
+      figure { margin-top: -22px; }
+    }
+
+    .c-background__large {
+      margin-top: 30px;
+      padding-top: 16px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &.u-zetas {
+    .o-card-title { z-index: 5; }
+    figure { z-index: 4; }
+    .u-text-about { z-index: 2; }
+  }
+}
+
+// Utilidad para ajustar el bloque por qué amaine de Sobre Amaine
+.u-why-about {
+
+  @media (max-width: $screen-sm) {
+    .c-why { padding-top: 3.875rem; }
+  }
+}
+
+// Utilidad para colocar el icono video sobre primera imagen en Sobre Amaine
+.u-icon-video {
+  figure { position: relative; }
+
+  a {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    text-decoration: none;
+
+    i {
+      color: $color-white;
+      font-size: 60px;
+    }
+
+    &:hover i:after {
+      -webkit-animation: rotateLine 3s linear infinite;
+      animation: rotateLine 3s linear infinite;
+    }
+  }
+}
+
+// Utilidad para centrar el logo de Amaine en el menú mobile
+.u-logo-menu-mobile {
+  display: block;
+  margin: 0 auto 50px;
+
+  @media (min-width: $screen-xl) {
+    display: none;
+  }
+}
+
+
+// Utilidad para textos legales
+.u-legal-text {
+  @media (max-width: 992px) {
+    margin-top: 50px;
+    margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    max-width: 850px;
+    margin-left: 0;
+  }
+
+  p { margin-bottom: 16px; }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 32px;
+    margin-bottom: 16px;
+
+    li { margin-bottom: 8px; }
+  }
+
+  h2 {
+    font-weight: bold;
+    margin: 32px 0 16px;
+  }
+
+  h3 { margin: 32px 0 16px; }
+
+  table td { padding: 0 8px}
+}

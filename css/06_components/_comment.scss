@@ -1,0 +1,69 @@
+.c-comment {
+  &__inner {
+    padding-bottom: rem(54px);
+
+    @media (min-width: $screen-md) {
+      padding-bottom: rem(150px);
+    }
+  }
+
+  &__quote,
+  &__user {
+    margin-right: rem(16px);
+  }
+
+  &__quote {
+    i {
+      font-size: rem(36px);
+      color: $color-mark;
+
+      @media (min-width: $screen-md) {
+        font-size: rem(56px);
+      }
+    }
+  }
+
+  &__text {
+    padding-bottom: rem(16px);
+
+    @media (min-width: $screen-md) {
+      padding-bottom: rem(24px);
+    }
+
+    p {
+      font-family: $ff-georgiaitalic;
+    }
+  }
+
+  &__user {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: $screen-md) {
+      width: 82px;
+      height: 82px;
+    }
+  }
+
+  &__data {
+    p {
+      font-weight: $bold;
+      font-size: rem(14px);
+
+      @media (min-width: $screen-md) {
+        font-size: rem(18px);
+      }
+    }
+  }
+}

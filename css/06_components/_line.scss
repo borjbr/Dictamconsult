@@ -1,0 +1,55 @@
+.c-line {
+  position: relative;
+  padding-bottom: $line;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: $line;
+    background-color: $color-primary;
+  }
+
+  &--left {
+    padding-left: $line;
+    padding-bottom: 0;
+
+    &::before {
+      left: 0;
+      width: $line;
+      height: 100%;
+    }
+  }
+
+  &--right {
+    padding-right: $line;
+    padding-bottom: 0;
+
+    &::before {
+      right: 0;
+      width: $line;
+      height: 100%;
+    }
+  }
+
+  &--top {
+    padding-top: $line;
+    padding-bottom: 0;
+
+    &::before {
+      top: 0;
+      width: 100%;
+      height: $line;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &--no-mobile::before { display: none; }
+  }
+  @media (min-width: 991px) {
+    &--no-desktop::before { display: none; }
+  }
+}

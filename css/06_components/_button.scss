@@ -1,0 +1,60 @@
+.c-button {
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background-color: $color-grey;
+  color: $color-white !important;
+  font-family: $ff-montserrat;
+  font-size: rem(14px);
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  padding: rem(16px) rem(32px) !important;
+  background-position: center;
+  transition: background 0.8s;
+
+  &:hover {
+    background: rgba($color-grey, 0.8)
+      radial-gradient(circle, transparent 1%, rgba($color-grey, 0.8) 1%)
+      center/15000%;
+  }
+
+  &:active {
+    background-color: rgba($color-grey, 0.5);
+    background-size: 100%;
+    transition: background 0s;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white !important;
+    background-position: center;
+    transition: background 0.8s, opacity 0.5s;
+
+    &:hover,
+    &:focus {
+      background: rgba($color-black, 0.8)
+        radial-gradient(circle, transparent 1%, rgba($color-black, 0.8) 1%)
+        center/15000%;
+    }
+
+    &:active {
+      background-color: rgba($color-black, 0.5);
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      background: $color-primary;
+    }
+  }
+}

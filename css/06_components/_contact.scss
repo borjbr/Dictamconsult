@@ -1,0 +1,27 @@
+.c-contact {
+  @extend .o-container;
+
+  @media (max-width: $screen-sm) {
+    margin-top: 70px;
+  }
+
+  &__title {
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: rem(40px);
+
+    @media (min-width: $screen-md) {
+      padding-bottom: rem(72px);
+    }
+  }
+
+  &__content {
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: rem(80px);
+
+    @media (min-width: $screen-md) {
+      padding-bottom: rem(160px);
+    }
+  }
+}
