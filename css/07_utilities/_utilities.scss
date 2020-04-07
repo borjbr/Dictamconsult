@@ -200,3 +200,37 @@
     strong {font-weight: bold;}
   }
 }
+
+
+.u-area {
+  background-color: $color-grey;
+  padding: 100px 0;
+  text-align: center;
+  &-title {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-family: $ff-latoBold;
+    color: $color-black;
+    &::before {
+      content: '';
+      left: 80px;
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      background-color: $color-primary;
+      top: -25px;
+      }
+    }
+  .nav {width: 100%;}
+  .nav-tabs .nav-link.active {
+      border: transparent;
+      border-radius: 0;
+    }
+  .tab-content {
+    background-color: $color-white;
+    text-align: left;
+    padding: 48px;
+  }
+}

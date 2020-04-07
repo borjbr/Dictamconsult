@@ -50,43 +50,10 @@ $(function() {
   //   });
   // }
 
-  //particles
-  if ($('#particles-js').length) {
-    particlesJS.load('particles-js', 'data/particles.json', function() {});
-  }
-
-  if ($('#particles-js-one').length) {
-    particlesJS.load('particles-js-one', 'data/particles.json', function() {});
-  }
-
-  if ($('#particles-js-two').length) {
-    particlesJS.load('particles-js-two', 'data/particles.json', function() {});
-  }
-
-  // modaal
-  $('.video').modaal({
-    type: 'video'
-  });
 
   // AOS
   AOS.init();
 
-  // navigation
-  var $nav = $('.js-nav');
-  var $navBody = $('body, html');
-  var $navHamburger= $nav.find('.c-nav__hamburger');
-
-  $navHamburger.on('click', function() {
-    if($nav.hasClass('open')) {
-      $navBody.removeClass('c-nav-noscroll');
-      $nav.removeClass('open');
-      $nav.addClass('close');
-    } else {
-      $nav.removeClass('close');
-      $nav.addClass('open');
-      $navBody.addClass('c-nav-noscroll');
-    }
-  });
 
   // navigation items
   var $item = $nav.find('.c-nav__list').find('li');
@@ -277,3 +244,4 @@ $(function() {
     alert("Error: " + err + ".");
   }
 })();
+
