@@ -1,7 +1,6 @@
 .c-footer {
   &__top {
     padding: rem(32px);
-    background-color: rgba($color-secondary, 0.9);
     color: $color-white;
     text-align: center;
   }
@@ -23,14 +22,14 @@
         &:hover,
         &:focus {
           background-color: $color-white;
-          color: $color-secondary;
+          color: $color-primary;
         }
       }
     }
   }
 
   &__bottom {
-    background-color: $color-secondary;
+    background-color: $color-primary;
     padding-top: rem(32px);
     padding-bottom: rem(112px);
 
@@ -86,7 +85,7 @@
           &:focus {
             text-decoration: none;
             background-color: $color-white;
-            color: $color-secondary;
+            color: $color-primary;
           }
         }
 
@@ -138,7 +137,7 @@
       &:hover,
       &:focus {
         background: $color-white;
-        color: $color-secondary;
+        color: $color-primary;
       }
     }
 
@@ -174,7 +173,7 @@
           &:focus {
             text-decoration: none;
             background-color: $color-white;
-            color: $color-secondary;
+            color: $color-primary;
           }
 
           &.active {

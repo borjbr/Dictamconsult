@@ -1,44 +1,41 @@
 .c-hero {
   width: 100%;
-  height: calc(100vh + 80px);
   background-color: $color-white;
   position: relative;
   overflow: hidden;
 
-  img {
-    position: absolute;
-    bottom: -80px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+  // img {
+  //   position: absolute;
+  //   bottom: 0px;
+  //   left: 50%;
+  //   -webkit-transform: translate(-50%, 0);
+  //   transform: translate(-50%, 0);
 
-    @media (min-width: $screen-xl) {
-      left: 0;
-      right: 0;
-      width: 100%;
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-    }
-  }
+  //   @media (min-width: $screen-xl) {
+  //     left: 0;
+  //     right: 0;
+  //     width: 100%;
+  //     -webkit-transform: translate(0, 0);
+  //     transform: translate(0, 0);
+  //   }
+  // }
 
   &__inner {
     position: absolute;
-    top: 13%;
+    text-align: right;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     max-width: 900px;
     width: 100%;
+    color: $color-white;
     padding-left: 15px;
     padding-right: 15px;
-
-    @media (min-width: $screen-md) {
-      top: 15%;
-    }
   }
 
   &__title {
-    text-align: center;
+    text-align: right;
     margin-bottom: rem(16px);
 
     @media (min-width: $screen-md) {
@@ -46,11 +43,11 @@
     }
 
     h2 {
-      font-size: rem(32px);
+      font-size: rem(72px);
       font-weight: $bold;
       margin-bottom: rem(32px);
 
-      @media (min-width: $screen-md) {
+      @media (max-width: $screen-md) {
         font-size: rem(64px);
       }
     }
@@ -86,7 +83,6 @@
       justify-content: center;
       text-transform: uppercase;
       text-decoration: none;
-      font-family: $ff-montserrat;
       font-weight: $thin;
       font-size: rem(14px);
       max-width: 300px;

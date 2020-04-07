@@ -31,6 +31,7 @@
 @import '06_components/_footer';
 @import '06_components/_form';
 @import '06_components/_contact';
+@import '06_components/_header-info';
 @import '06_components/_header';
 @import '06_components/_nav';
 @import '06_components/_button';
@@ -48,6 +49,7 @@
 
 // utilities
 @import '07_utilities/_utilities';
+@import '07_utilities/_overrides';
 
 // external
 @import '08_external/_headroom';

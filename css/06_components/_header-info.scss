@@ -1,0 +1,38 @@
+.c-header-info {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 50px;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
+  padding-left: rem(15px);
+  padding-right: rem(15px);
+  position: relative;
+
+  li {
+    font-size: 0.75rem;
+    padding-right: 20px;
+  }
+
+  &__icon {
+    text-align: right;
+    color: $color-white;
+    z-index: 10;
+    float: right;
+    position: absolute;
+    right: 10px;
+    width: 140px;
+
+    @media (min-width: $screen-lg) {
+      width: 200px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

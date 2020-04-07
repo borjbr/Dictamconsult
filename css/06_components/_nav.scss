@@ -6,7 +6,6 @@
     left: 0;
     right: 0;
     height: 100vh;
-    background-color: $color-secondary;
     transform: translate(100%, 0);
     display: flex;
     flex-direction: column;
@@ -95,7 +94,6 @@
 
   &__link {
     text-transform: uppercase;
-    font-family: $ff-montserrat;
     font-size: rem(14px);
     font-weight: $bold;
     text-decoration: none;

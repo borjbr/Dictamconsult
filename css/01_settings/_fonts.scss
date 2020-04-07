@@ -1,71 +1,38 @@
+
 @font-face {
-  font-family: 'geomanist';
-  src: url('../assets/fonts/geomanist/geomanist-medium-webfont.eot');
-  src: url('../assets/fonts/geomanist/geomanist-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/geomanist/geomanist-medium-webfont.woff2') format('woff2'),
-       url('../assets/fonts/geomanist/geomanist-medium-webfont.woff') format('woff'),
-       url('../assets/fonts/geomanist/geomanist-medium-webfont.ttf') format('truetype'),
-       url('../assets/fonts/geomanist/geomanist-medium-webfont.svg#geomanist-wzmedium') format('svg');
+  font-family: 'LatoBlack';
+  src: url('../assets/fonts/Lato/Lato-Black.eot');
+  src: local('☺'), url('../assets/fonts/Lato/Lato-Black.woff') format('woff'),
+  url('../assets/fonts/Lato/Lato-Black.ttf') format('truetype'),
+  url('../assets/fonts/Lato/Lato-Black.svg') format('svg');
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'LatoBold';
+	src: url('../assets/fonts/Lato/Lato-Bold.eot');
+  src: local('☺'), url('../assets/fonts/Lato/Lato-Bold.woff') format('woff'),
+  url('../assets/fonts/Lato/Lato-Bold.ttf') format('truetype'),
+  url('../assets/fonts/Lato/Lato-Bold.svg') format('svg');
   font-weight: $bold;
-  font-style: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'geomanist';
-  src: url('../assets/fonts/geomanist/geomanist-light-webfont.eot');
-  src: url('../assets/fonts/geomanist/geomanist-light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/geomanist/geomanist-light-webfont.woff2') format('woff2'),
-       url('../assets/fonts/geomanist/geomanist-light-webfont.woff') format('woff'),
-       url('../assets/fonts/geomanist/geomanist-light-webfont.ttf') format('truetype'),
-       url('../assets/fonts/geomanist/geomanist-light-webfont.svg#geomanist-wzlight') format('svg');
-  font-weight: $thin;
+	font-family: 'LatoRegular';
+	src: url('../assets/fonts/Lato/Lato-Regular.eot');
+  src: local('☺'), url('../assets/fonts/Lato/Lato-Regular.woff') format('woff'),
+  url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype'),
+  url('../assets/fonts/Lato/Lato-Regular.svg') format('svg');
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'geomanist';
-  src: url('../assets/fonts/geomanist/geomanist-book-webfont.eot');
-  src: url('../assets/fonts/geomanist/geomanist-book-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/geomanist/geomanist-book-webfont.woff2') format('woff2'),
-       url('../assets/fonts/geomanist/geomanist-book-webfont.woff') format('woff'),
-       url('../assets/fonts/geomanist/geomanist-book-webfont.ttf') format('truetype'),
-       url('../assets/fonts/geomanist/geomanist-book-webfont.svg#geomanist-wzbook') format('svg');
   font-weight: $regular;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'georgiaitalic';
-  src: url('../assets/fonts/georgia/georgia_italic-webfont.eot');
-  src: url('../assets/fonts/georgia/georgia_italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/georgia/georgia_italic-webfont.woff2') format('woff2'),
-       url('../assets/fonts/georgia/georgia_italic-webfont.woff') format('woff'),
-       url('../assets/fonts/georgia/georgia_italic-webfont.ttf') format('truetype'),
-       url('../assets/fonts/georgia/georgia_italic-webfont.svg#georgiaitalic') format('svg');
-  font-weight: $regular;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserrat';
-  src: url('../assets/fonts/montserrat/montserrat-semibold-webfont.eot');
-  src: url('../assets/fonts/montserrat/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
-       url('../assets/fonts/montserrat/montserrat-semibold-webfont.woff') format('woff'),
-       url('../assets/fonts/montserrat/montserrat-semibold-webfont.ttf') format('truetype'),
-       url('../assets/fonts/montserrat/montserrat-semibold-webfont.svg#montserratsemibold') format('svg');
-  font-weight: $bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserrat';
-  src: url('../assets/fonts/montserrat/montserrat-light-webfont.eot');
-  src: url('../assets/fonts/montserrat/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../assets/fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
-       url('../assets/fonts/montserrat/montserrat-light-webfont.woff') format('woff'),
-       url('../assets/fonts/montserrat/montserrat-light-webfont.ttf') format('truetype'),
-       url('../assets/fonts/montserrat/montserrat-light-webfont.svg#montserratlight') format('svg');
-  font-weight: $thin;
-  font-style: normal;
+	font-family: 'LatoSemibold';
+	src: url('../assets/fonts/Lato/Lato-Semibold.eot');
+  src: local('☺'), url('../assets/fonts/Lato/Lato-Semibold.woff') format('woff'),
+  url('fonts/Lato-Semibold.ttf') format('truetype'),
+  url('fonts/Lato-Semibold.svg') format('svg');
+	font-style: normal;
 }
