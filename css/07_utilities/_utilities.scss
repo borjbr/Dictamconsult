@@ -177,7 +177,7 @@
 .u-firma {
   background-color: $color-primary;
   text-align: center;
-  padding: 100px 0;
+  padding: 120px 0;
   &-title {
     display: inline-block;
     position: relative;
@@ -204,12 +204,12 @@
 
 .u-area {
   background-color: $color-grey;
-  padding: 100px 0;
+  padding: 120px 0;
   text-align: center;
   &-title {
     display: inline-block;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 56px;
     font-size: 48px;
     font-family: $ff-latoBold;
     color: $color-black;
@@ -224,13 +224,44 @@
       }
     }
   .nav {width: 100%;}
-  .nav-tabs .nav-link.active {
+
+  .nav-link {padding: 16px;}
+
+  .icon {
+    vertical-align: middle;
+    display: table-cell;
+    padding-right: 15px;
+    font-size: 36px;
+    color: $color-primary;
+  }
+  .nav-tabs {border-bottom: 0;
+    .nav-link.active {
       border: transparent;
       border-radius: 0;
     }
+    .nav-link:hover, .nav-tabs .nav-link:focus {
+      border-color: transparent;
+    }
+  }
+
+  .nav-tabs-text {
+    font-size: 14px;
+    color: $color-black;
+    text-align: left;
+    display: table-cell;}
   .tab-content {
+    position: relative;
     background-color: $color-white;
     text-align: left;
-    padding: 48px;
+    padding: 48px 56px;
+    &-title {
+      font-size: 21px;
+      margin-bottom: 20px;
+      font-weight:700;
+    }
+    &-img {
+      right: 60px;
+      bottom: 0;
+      position: absolute;}
   }
 }

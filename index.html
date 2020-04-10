@@ -67,22 +67,24 @@
   <h1 class="u-visuallyhidden">Página oficial Dictamconsult</h1>
 
   <!--Skip content-->
-  <a href="#main" class="c-skip js-skip" title="Saltar al contenido">Saltar al contenido</a>
+  <!-- <a href="#main" class="c-skip js-skip" title="Saltar al contenido">Saltar al contenido</a> -->
 
   <!-- header -->
-  <div class="c-header-info">
+  <!-- <div class="c-header-info">
     <ul class="list-inline list-unstyled">
       <li class="list-inline-item"><i class=""></i><strong>Teléfono: </strong><span>(+34) 699 155 303 / 914 092 706</span></li>
       <li class="list-inline-item"><i class=""></i><strong>Email: </strong><span>contacto@Dictamconsult.com</span></li>
       <li class="list-inline-item"><i class=""></i><strong>Dirección: </strong><span>C/Sainz de Baranda, 31 Bajo</span></li>
     </ul>
     <a class="c-header-info__icon" href=""><i class="icon icon-linkedin"></i></a>
-  </div>
+  </div> -->
   
   <header class="c-header headroom">
     <!-- logotype -->
     <figure class="c-header__logotype">
-      <a href="/" title="Ir a la página de inicio"><img src="assets/images/logo.png" alt="logo Dictamconsult" /></a>
+      <a href="/" title="Ir a la página de inicio">
+        <div class="lrg-logo"></div>
+      </a>
     </figure>
 
     <!-- c:nav -->
@@ -98,22 +100,21 @@
       <ul class="c-nav__list" aria-label="Listado menú">
 
         <a class="u-logo-menu-mobile" href="index.html" title="Ir a la página de inicio">
-
         </a>
         <li class="c-nav__item">
-          <a href="/" class="c-nav__link" title="Ir a inicio">INICIO</a>
+          <a href="#inicio" class="c-nav__link js-scroll-trigger" title="Ir a inicio">INICIO</a>
         </li>
         <li class="c-nav__item">
-          <a href="#firma" class="c-nav__link" title="Ir a firma">FIRMA</a>
+          <a href="#firma" class="c-nav__link js-scroll-trigger" title="Ir a firma">FIRMA</a>
         </li>
         <li class="c-nav__item">
-          <a href="#areas" class="c-nav__link" title="Ir a contacto">ÁREAS DE PRÁCTICA</a>
+          <a href="#areas" class="c-nav__link js-scroll-trigger" title="Ir a contacto">ÁREAS DE PRÁCTICA</a>
         </li>
         <li class="c-nav__item">
-          <a href="#equipo" class="c-nav__link" title="Ir a equipo">EQUIPO</a>
+          <a href="#equipo" class="c-nav__link js-scroll-trigger" title="Ir a equipo">EQUIPO</a>
         </li>
         <li class="c-nav__item">
-          <a href="#contacto" class="c-nav__link" title="Ir a contacto">CONTACTO</a>
+          <a href="#contacto" class="c-nav__link js-scroll-trigger" title="Ir a contacto">CONTACTO</a>
         </li>
         <li class="c-nav__item">
           <a href="/" class="c-nav__link" title="Ir a blog">BLOG</a>
@@ -164,7 +165,7 @@
   <main id="main">
 
     <!-- section firma-->
-    <section class="u-firma" data-aos="fade-top">
+    <section id="firma" class="u-firma" data-aos="fade-top">
       <div class="container">
         <h2 class="u-firma-title">La firma</h2>
         <p class="u-firma-text"><strong>DICTAMCONSULT Abogados & Economistas</strong> es un despacho profesional que, fundado en el año 2006, nace para dar cobertura legal a empresas y profesionales en situación concursal y prestar asistencia a los distintos Juzgados de lo Mercantil.</p>
@@ -176,29 +177,32 @@
       </div>
     </section>
 
-    <section class="u-area" data-aos="fade-top">
+    <section id="areas" class="u-area" data-aos="fade-top">
     <div class="container">
       <h2 class="u-area-title">Áreas de Práctica</h2>
       <div class="row">
       <nav class="nav nav-justified">
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-fiscal-tab" data-toggle="tab" href="#nav-fiscal" role="tab" aria-controls="nav-fiscal" aria-selected="true"><i class="icon icon-calculator"></i> Derecho fiscal</a>
-          <a class="nav-item nav-link" id="nav-herencias-tab" data-toggle="tab" href="#nav-herencias" role="tab" aria-controls="nav-herencias" aria-selected="false"><i class="icon icon-strongbox"></i> Herencias y sucesiones</a>
-          <a class="nav-item nav-link" id="nav-penal-tab" data-toggle="tab" href="#nav-penal" role="tab" aria-controls="nav-penal" aria-selected="false"><i class="icon icon-auction"></i> Derecho penal</a>
-          <a class="nav-item nav-link" id="nav-concursal-tab" data-toggle="tab" href="#nav-concursal" role="tab" aria-controls="nav-concursal" aria-selected="false"><i class="icon icon-analytics"></i> Derecho concursal</a>
-          <a class="nav-item nav-link" id="nav-informes-tab" data-toggle="tab" href="#nav-informes" role="tab" aria-controls="nav-informes" aria-selected="false"><i class="icon icon-stamp"></i> Informes y periciales</a>
+          <a class="nav-item nav-link active" id="nav-fiscal-tab" data-toggle="tab" href="#nav-fiscal" role="tab" aria-controls="nav-fiscal" aria-selected="true"><i class="icon icon-calculator"></i><span class="nav-tabs-text">Derecho<br>fiscal</span></a>
+          <a class="nav-item nav-link" id="nav-herencias-tab" data-toggle="tab" href="#nav-herencias" role="tab" aria-controls="nav-herencias" aria-selected="false"><i class="icon icon-strongbox"></i><span class="nav-tabs-text">Herencias y sucesiones</span></a>
+          <a class="nav-item nav-link" id="nav-penal-tab" data-toggle="tab" href="#nav-penal" role="tab" aria-controls="nav-penal" aria-selected="false"><i class="icon icon-auction"></i><span class="nav-tabs-text">Derecho<br>penal</span></a>
+          <a class="nav-item nav-link" id="nav-concursal-tab" data-toggle="tab" href="#nav-concursal" role="tab" aria-controls="nav-concursal" aria-selected="false"><i class="icon icon-analytics"></i><span class="nav-tabs-text">Derecho<br>concursal</span></a>
+          <a class="nav-item nav-link" id="nav-informes-tab" data-toggle="tab" href="#nav-informes" role="tab" aria-controls="nav-informes" aria-selected="false"><i class="icon icon-stamp"></i><span class="nav-tabs-text">Informes y periciales</span></a>
         </div>
       </nav>
       <div class="tab-content" id="nav-tabContent">
+        <img src="assets/images/tab-logo.png" class="tab-content-img">
         <div class="tab-pane fade show active" id="nav-fiscal" role="tabpanel" aria-labelledby="nav-fiscal-tab">
-          <p>Con más de 20 años de asesoramiento en esta materia, el departamento concursal de DICTAMCONSULT Abogados & Economistas trae nombre al despacho y es el pionero dentro de los servicios que prestamos en la firma.</p>
+          <h3 class="tab-content-title">Derecho Concursal</h3>
+          <p>Con más de 20 años de asesoramiento en esta materia, el departamento concursal de <strong>DICTAMCONSULT Abogados & Economistas</strong> trae nombre al despacho y es el pionero dentro de los servicios que prestamos en la firma.</p>
           <p>Dentro de nuestro ámbito de actuación en materia concursal, la Firma cuenta con un equipo de profesionales experimentados en la preparación de la documentación a presentar tanto por empresas como por particulares en situación de insolvencia ante los Juzgados de lo Mercantil y que se acompaña a la solicitud de concurso.</p>
           <p>Asimismo, como sociedad profesional debidamente acreditada e inscrita en los correspondientes listados oficiales, DICTAMCONSULT Abogados & Economistas ha resultado designada por parte de los Juzgados de lo Mercantil como Administradora Concursal en distintos procedimientos concursales, prestando un servicio integral desde el mismo momento de su nombramiento y hasta el archivo del expediente.</p>
           <p>Todo ello complementado con sinergias establecidas con distintos profesionales vinculados a la materia, lo que permite a la Firma agilizar la resolución de los procedimientos concursales en sus distintas fases y situaciones.</p>
         </div>
         <div class="tab-pane fade" id="nav-herencias" role="tabpanel" aria-labelledby="nav-herencias-tab">
-        <p>En DICTAMCONSULT Abogados & Economistas sabemos que uno de los pilares básicos para la sociedad española es la familia. Por ello, cuando tenemos un desagradable suceso en el ámbito familiar necesitamos rodearnos de personas de confianza también en el ámbito del asesoramiento jurídico y de la asistencia letrada.</p>
-        <p>En DICTAMCONSULT Abogados & Economistas tratamos de aunar nuestros conocimientos en esta materia con un trato exclusivo y personalizado, en donde estudiamos cada caso al detalle para poder ofrecer la mejor asistencia posible, ayudando al cliente en todas las tramitaciones administrativas asociadas a la herencia y asesorándole para minimizar en la medida de lo posible la tributación asociada a este acontecimiento.</p>
+        <h3 class="tab-content-title">Derecho Civil (Herencias y Sucesiones)</h3>
+        <p>En <strong>DICTAMCONSULT Abogados & Economistas</strong> sabemos que uno de los pilares básicos para la sociedad española es la familia. Por ello, cuando tenemos un desagradable suceso en el ámbito familiar necesitamos rodearnos de personas de confianza también en el ámbito del asesoramiento jurídico y de la asistencia letrada.</p>
+        <p>En <strong>DICTAMCONSULT Abogados & Economistas</strong> tratamos de aunar nuestros conocimientos en esta materia con un trato exclusivo y personalizado, en donde estudiamos cada caso al detalle para poder ofrecer la mejor asistencia posible, ayudando al cliente en todas las tramitaciones administrativas asociadas a la herencia y asesorándole para minimizar en la medida de lo posible la tributación asociada a este acontecimiento.</p>
         <p>Por todo ello, en nuestro departamento de Derecho de Sucesiones le ayudamos con:</p>
         <ul>
           <li>La redacción de su testamento</li>
@@ -212,10 +216,11 @@
         </ul>
         </div>
         <div class="tab-pane fade" id="nav-penal" role="tabpanel" aria-labelledby="nav-penal-tab">
+          <h3 class="tab-content-title">Derecho Penal</h3>
           <p>El Derecho penal es un área del derecho que regula y gestiona la potestad sancionadora que tiene encomendado el Estado. El punto de partida es un acontecimiento o "supuesto de hecho" que será calificado como “conducta delictiva” y a la que se le asocia una consecuencia jurídica, con una pena correspondiente.
           </p>
-          <p>En DICTAMCONSULT Abogados & Economistas contamos con un equipo de abogados especializados en la defensa letrada y el asesoramiento jurídico de las conductas delictivas, prestando nuestros servicios tanto a particulares como a empresas. Nuestros profesionales ejercen tanto la defensa como la acusación en todo tipo de instancias y procedimientos penales.</p>
-          <p>En concreto, en el departamento de derecho penal de DICTAMCONSULT Abogados & Economistas, nuestros profesionales prestan un asesoramiento y dirección letrada personalizado en relación con los siguientes asuntos:</p>
+          <p>En <strong>DICTAMCONSULT Abogados & Economistas</strong> contamos con un equipo de abogados especializados en la defensa letrada y el asesoramiento jurídico de las conductas delictivas, prestando nuestros servicios tanto a particulares como a empresas. Nuestros profesionales ejercen tanto la defensa como la acusación en todo tipo de instancias y procedimientos penales.</p>
+          <p>En concreto, en el departamento de derecho penal de <strong>DICTAMCONSULT Abogados & Economistas</strong>, nuestros profesionales prestan un asesoramiento y dirección letrada personalizado en relación con los siguientes asuntos:</p>
           <ul>
             <li>Responsabilidad penal de la persona jurídica</li>
             <li>Derecho penal económico y de la empresa</li>
@@ -231,10 +236,11 @@
           </ul>
         </div>
         <div class="tab-pane fade" id="nav-concursal" role="tabpanel" aria-labelledby="nav-concursal-tab">
-          <p>La normativa tributaria es probablemente la materia jurídica mas cambiante del ordenamiento jurídico español. Además, es cada vez mayor el importante papel que juega la Agencia Tributaria estos días. Por ello, en DICTAMCONSULT Abogados & Economistas llevamos a cabo una diaria actualización formativa para prestar a nuestros clientes el mejor asesoramiento fiscal posible.
+          <h3 class="tab-content-title">Derecho fiscal y tributario</h3>
+          <p>La normativa tributaria es probablemente la materia jurídica mas cambiante del ordenamiento jurídico español. Además, es cada vez mayor el importante papel que juega la Agencia Tributaria estos días. Por ello, en <strong>DICTAMCONSULT Abogados & Economistas</strong> llevamos a cabo una diaria actualización formativa para prestar a nuestros clientes el mejor asesoramiento fiscal posible.
           </p>
-          <p>En este sentido, en DICTAMCONSULT Abogados & Economistas prestamos un asesoramiento integral en materia tributaria, con especial dedicación a la imposición directa (tanto para persona física como jurídica) y a la gestión de procedimientos tributarios ante los Órganos Administrativos de Hacienda</p>
-          <p>Así, de cara a defender los intereses de nuestros clientes ante la Agencia Estatal de la Administración Tributaria, junto con la presentación de los correspondientes modelos y declaraciones fiscales, en DICTAMCONSULT Abogados & Economistas prestamos un servicio de asesoramiento tributario previo donde destacamos:</p>
+          <p>En este sentido, en <strong>DICTAMCONSULT Abogados & Economistas</strong> prestamos un asesoramiento integral en materia tributaria, con especial dedicación a la imposición directa (tanto para persona física como jurídica) y a la gestión de procedimientos tributarios ante los Órganos Administrativos de Hacienda</p>
+          <p>Así, de cara a defender los intereses de nuestros clientes ante la Agencia Estatal de la Administración Tributaria, junto con la presentación de los correspondientes modelos y declaraciones fiscales, en <strong>DICTAMCONSULT Abogados & Economistas</strong> prestamos un servicio de asesoramiento tributario previo donde destacamos:</p>
           <ul>
             <li>El Impuesto sobre la Renta (IRPF) y el Impuesto sobre el Patrimonio (IP)</li>
             <li>El Impuesto sobre Sociedades (IS) y pagos fraccionados</li>
@@ -246,7 +252,8 @@
           </ul>
         </div>
         <div class="tab-pane fade" id="nav-informes" role="tabpanel" aria-labelledby="nav-informes-tab">
-          <p>El equipo de expertos abogados, economistas, y auditores que conforma DICTAMCONSULT Abogados & Economistas cuenta con dilatada experiencia en la confección, redacción y ratificación de informes periciales y dictámenes concursales, lo que le permite a la Firma ofrecer un servicio de calidad y excelencia en este campo.
+          <h3 class="tab-content-title">Informes Económicos y Periciales</h3>
+          <p>El equipo de expertos abogados, economistas, y auditores que conforma <strong>DICTAMCONSULT Abogados & Economistas</strong> cuenta con dilatada experiencia en la confección, redacción y ratificación de informes periciales y dictámenes concursales, lo que le permite a la Firma ofrecer un servicio de calidad y excelencia en este campo.
           </p>
           <p>Nuestros profesionales, miembros de la Asociación Profesional Colegial de Peritos Judiciales del Reino de España (ASPEJURE), figuran igualmente inscritos en los listados oficiales de los distintos Colegios y Juzgados, por lo que resultan designados de oficio en números procedimientos jurídicos.</p>
           <p>Entre los ámbitos de actuación destacan:</p>
@@ -263,6 +270,11 @@
       </div>
       </div>
     </div>
+    </section>
+
+    <section id="equipo" class="u-equipo" data-aos="fade-top">
+      
+
     </section>
   </main>
 
@@ -281,8 +293,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/lib/headroom.min.js"></script>
   <script src="js/lib/jQuery.headroom.js"></script>
-  <script src="js/lib/particles.js"></script>
-  <script src="js/lib/modaal.min.js"></script>
   <script src="js/lib/aos.js"></script>
   <script src="js/lib/parsley.min.js"></script>
   <script src="js/lib/ofi.min.js"></script>

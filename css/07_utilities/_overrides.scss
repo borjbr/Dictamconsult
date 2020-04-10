@@ -1,1 +1,20 @@
 a:hover {text-decoration: none;}
+
+strong {font-weight: bold;}
+
+.visible {display: block;}
+.hidden {display: none;}
+
+.lrg-logo {
+  background-size: contain;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/logo.png");
+}
+
+.sml-logo {
+  background-size: contain;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/logo-2.png");
+}
