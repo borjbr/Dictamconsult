@@ -1,17 +1,35 @@
+
+@import "variables";
+
 @font-face {
-  font-family: 'amaineicon';
-  src:  url('../assets/fonts/amaineicon/amaineicon.eot?bqxxs0');
-  src:  url('../assets/fonts/amaineicon/amaineicon.eot?bqxxs0#iefix') format('embedded-opentype'),
-    url('../assets/fonts/amaineicon/amaineicon.ttf?bqxxs0') format('truetype'),
-    url('../assets/fonts/amaineicon/amaineicon.woff?bqxxs0') format('woff'),
-    url('../assets/fonts/amaineicon/amaineicon.svg?bqxxs0#amaineicon') format('svg');
+  font-family: 'iconFont';
+  src:  url('../assets/fonts/Icon/icon.eot?82julx');
+  src:  url('../assets/fonts/Icon/icon.eot?82julx#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Icon/icon.ttf?82julx') format('truetype'),
+    url('../assets/fonts/Icon/icon.woff?82julx') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
-i {
+$icomoon-font-family: "icon" !default;
+$icomoon-font-path: "fonts" !default;
+
+$icon-auction: "\e900";
+$icon-calculator: "\e901";
+$icon-call: "\e902";
+$icon-home: "\e903";
+$icon-linkedin: "\e904";
+$icon-mail: "\e905";
+$icon-right: "\e906";
+$icon-stamp: "\e907";
+$icon-strongbox: "\e908";
+$icon-analytics: "\e909";
+
+
+.icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'amaineicon' !important;
+  font-family: 'iconFont' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,51 +42,54 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-close:before {
-  content: "\e90f";
+.icon-auction {
+  &:before {
+    content: $icon-auction; 
+  }
 }
-.icon-menu:before {
-  content: "\e90d";
+.icon-calculator {
+  &:before {
+    content: $icon-calculator; 
+  }
 }
-.icon-video-2:before {
-  content: "\e90e";
+.icon-call {
+  &:before {
+    content: $icon-call; 
+  }
 }
-.icon-success:before {
-  content: "\e90c";
+.icon-home {
+  &:before {
+    content: $icon-home; 
+  }
 }
-.icon-build:before {
-  content: "\e90a";
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin; 
+  }
 }
-.icon-cloud:before {
-  content: "\e90b";
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
 }
-.icon-email:before {
-  content: "\e907";
+.icon-right {
+  &:before {
+    content: $icon-right; 
+  }
 }
-.icon-location:before {
-  content: "\e908";
+.icon-stamp {
+  &:before {
+    content: $icon-stamp; 
+  }
 }
-.icon-phone:before {
-  content: "\e909";
+.icon-strongbox {
+  &:before {
+    content: $icon-strongbox; 
+  }
 }
-.icon-amaine-outline:before {
-  content: "\e900";
+.icon-analytics {
+  &:before {
+    content: $icon-analytics; 
+  }
 }
-.icon-arrow-down:before {
-  content: "\e901";
-}
-.icon-arrow-left:before {
-  content: "\e902";
-}
-.icon-linkedin:before {
-  content: "\e903";
-}
-.icon-mark:before {
-  content: "\e904";
-}
-.icon-play:before {
-  content: "\e905";
-}
-.icon-world:before {
-  content: "\e906";
-}
+

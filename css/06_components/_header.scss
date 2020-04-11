@@ -1,6 +1,6 @@
 .c-header {
   width: 100%;
-  height: 65px;
+  height: 120px;
   background-color: $color-white;
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   padding-right: rem(15px);
   position: relative;
 
-  @media (min-width: $screen-md) {
+  @media (max-width: $screen-md) {
     height: 80px;
     padding-left: rem(44px);
     padding-right: rem(44px);
@@ -17,6 +17,7 @@
 
   &__logotype {
     width: 140px;
+    margin: 0;
 
     @media (min-width: $screen-lg) {
       width: 200px;
