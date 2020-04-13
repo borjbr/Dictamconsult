@@ -2,17 +2,18 @@
   font-size: 12px;
   &-header{
     border-bottom: 0;
-    padding-bottom: 0;
+    padding: 16px 30px 0;
   }
   &-body {
-    padding: 16px;
+    padding: 0 16px 16px;
   &__content {
+    position: relative;
     text-align: justify;
     h5{
-      margin: 8px 0;
-      font-size: 14px;
+      margin: 14px 0;
+      font-size: 16px;
       font-weight: bold;
-      padding: 6px;
+      padding: 8px;
       display: block;
       background-color: $color-primary;
       color: $color-white;
@@ -26,5 +27,51 @@
         }
       }
     }
+    &__photo { 
+      position: relative;
+      margin-top: 14px;
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-box-shadow: 0px 1px 5px 0px rgba(135,135,135,1);
+      -moz-box-shadow: 0px 1px 5px 0px rgba(135,135,135,1);
+      box-shadow: 0px 1px 5px 0px rgba(135,135,135,1);
+      &--01 {background-image: url("../assets/images/equipo1.jpg");}
+      &--02 {background-image: url("../assets/images/equipo2.jpg");}
+      &--03 {background-image: url("../assets/images/equipo3.jpg");}
+      
+      &-name {
+        text-align: center;
+        font-size: 16px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 4px;
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+    }
+
+    &__info {
+      color: $color-primary;
+      text-align: center;
+      margin-top: 16px;
+      a {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
   }
+}
+
+.modal-image {
+  width: 15%;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
 }

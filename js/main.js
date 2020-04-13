@@ -216,13 +216,13 @@ $(function() {
 
   var events = {
     acceptCookies: function (e) {
-      localStorage.setItem('amaine', 'accepted');
+      localStorage.setItem('dictamconsult', 'accepted');
       dom.pane.removeClass('c-cookie--visible');
     }
   };
 
   var checkCookies = function () {
-    if (localStorage.getItem('amaine') && localStorage.getItem('amaine') === 'accepted') {
+    if (localStorage.getItem('dictamconsult') && localStorage.getItem('dictamconsult') === 'accepted') {
       dom.pane.removeClass('c-cookie--visible');
     } else {
       dom.pane.addClass('c-cookie--visible');

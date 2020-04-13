@@ -18,3 +18,21 @@ strong {font-weight: bold;}
   background-repeat: no-repeat;
   background-image: url("../assets/images/logo-2.png");
 }
+
+.ta-left {text-align: left;}
+
+.carousel-control-prev, .carousel-control-next {
+  text-decoration: none;
+  color: $color-white;
+  .icon {
+    font-size: 50px;
+    font-weight: 700;
+    color: $color-white;
+  }
+}
+
+.carousel-control-prev {
+  .icon {
+    transform: rotate(180deg);
+  }
+}
