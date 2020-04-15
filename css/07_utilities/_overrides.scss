@@ -10,6 +10,9 @@ strong {font-weight: bold;}
   height: 90px;
   background-repeat: no-repeat;
   background-image: url("../assets/images/logo.png");
+  @media (max-width: $screen-sm) {
+    height: 60px;
+  }
 }
 
 .sml-logo {
@@ -28,11 +31,22 @@ strong {font-weight: bold;}
     font-size: 50px;
     font-weight: 700;
     color: $color-white;
+    @media (max-width: $screen-sm) {
+      font-size: rem(24px);
+      line-height: auto;
+    }
   }
 }
 
 .carousel-control-prev {
   .icon {
     transform: rotate(180deg);
+  }
+}
+
+.tab-pane {
+  ul {
+    padding-left: 20px;
+    list-style-type: disc;
   }
 }

@@ -1,0 +1,79 @@
+.c-support {
+  height: 64px;
+  position: fixed;
+  background-color: transparent;
+  border:solid 1px $color-grey;
+  border-radius: 3em;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  margin:16px;
+  @include transition();
+
+  @media (max-width: $screen-sm) {  
+    display: none;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    text-decoration: none; }
+
+  &__info {
+    float: left;
+    margin: 6px 0;
+    visibility:hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding: 0;
+    @include transition();
+
+    &-text {
+      color: $color-white;
+      width: 0;
+      display: none;
+      font-size: 16px;
+    }
+
+    &-number {
+      width: 0;
+      display: none;
+      color: $color-white;
+      font-weight: 700;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    height: 64px;
+    width: 64px;
+    background-color: $color-primary;
+  }
+
+  i {
+    position: absolute;
+    color: $color-grey;
+    z-index: 2;
+    top: 25%;
+    left: 25%;
+    font-size: 32px;
+  }
+
+  &:hover .c-support__info {
+    height: auto;
+    width: 180px;
+    visibility: visible;
+    display: inline-block;
+    @include transition();
+
+    &-text,
+    &-number{
+      display: block;
+      width: 193px;
+    }
+  }
+}

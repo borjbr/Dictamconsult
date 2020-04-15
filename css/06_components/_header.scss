@@ -10,9 +10,14 @@
   position: relative;
 
   @media (max-width: $screen-md) {
-    height: 80px;
+    height: 100px !important;
     padding-left: rem(44px);
     padding-right: rem(44px);
+  }
+  @media (max-width: $screen-sm) {
+    height: 80px !important;
+    padding-left: rem(16px);
+    padding-right: rem(16px);
   }
 
   &__logotype {

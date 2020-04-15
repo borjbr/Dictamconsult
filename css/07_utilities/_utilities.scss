@@ -178,6 +178,9 @@
   background-color: $color-primary;
   text-align: center;
   padding: 120px 0;
+  @media (max-width: $screen-sm) {  
+    padding: 60px 0;
+  }
   &-title {
     display: inline-block;
     position: relative;
@@ -185,6 +188,9 @@
     font-size: 48px;
     font-family: $ff-latoblack;
     color: $color-white;
+    @media (max-width: $screen-sm) {  
+      font-size: 30px;
+    }
     &::before {
       content: '';
       left: 60px;
@@ -193,11 +199,19 @@
       height: 4px;
       background-color: $color-white;
       top: -25px;
+      @media (max-width: $screen-sm) {  
+        left: 30px;
+        }
       }
     }
   &-text {
     color: $color-white;
-    strong {font-weight: bold;}
+    @media (max-width: $screen-sm) {  
+      font-size: 12px;
+    }
+    strong {
+      font-weight: bold;
+    }
   }
 }
 
@@ -206,6 +220,10 @@
   background-color: $color-grey;
   padding: 120px 0;
   text-align: center;
+  padding: 120px 0;
+  @media (max-width: $screen-sm) {  
+    padding: 60px 0;
+  }
   &-title {
     display: inline-block;
     position: relative;
@@ -213,6 +231,9 @@
     font-size: 48px;
     font-family: $ff-latoblack;
     color: $color-black;
+    @media (max-width: $screen-sm) {  
+      font-size: 30px;
+    }
     &::before {
       content: '';
       left: 140px;
@@ -221,6 +242,9 @@
       height: 4px;
       background-color: $color-primary;
       top: -25px;
+      @media (max-width: $screen-sm) {  
+        left: 90px;
+        }
       }
     }
   .nav {width: 100%;}
@@ -274,7 +298,18 @@
   background-size: cover;
   padding: 120px 0;
   text-align: center;
-  .row {margin-top: 60px;}
+  @media (max-width: $screen-md) {
+    height: auto;
+  }
+  @media (max-width: $screen-sm) {  
+    padding: 60px 0;
+  }
+  .row {
+    margin-top: 60px;
+    @media (max-width: $screen-md) {
+      margin-top: 20px;
+    }
+  }
    &-title {
     display: inline-block;
     position: relative;
@@ -282,6 +317,9 @@
     font-size: 48px;
     font-family: $ff-latoblack;
     color: $color-white;
+    @media (max-width: $screen-sm) {  
+      font-size: 30px;
+    }
     &::before {
       content: '';
       left: 140px;
@@ -290,6 +328,9 @@
       height: 4px;
       background-color: $color-white;
       top: -25px;
+      @media (max-width: $screen-sm) {  
+        left: 85px;
+      }
     }
   }
 }
@@ -297,6 +338,9 @@
 .u-contacto {
   padding: 120px 0;
   text-align: center;
+  @media (max-width: $screen-sm) {  
+    padding: 60px 0;
+  }
   &-title {
     display: inline-block;
     position: relative;
@@ -304,6 +348,9 @@
     font-size: 48px;
     font-family: $ff-latoblack;
     color: $color-black;
+    @media (max-width: $screen-sm) {  
+      font-size: 30px;
+    }
     &::before {
       content: '';
       left: 110px;
@@ -312,9 +359,12 @@
       height: 4px;
       background-color: $color-primary;
       top: -25px;
+      @media (max-width: $screen-sm) {  
+        left: 55px;
+      }
     }
   }
-  &-info{
+  &-info {
     text-align: left;
     &__title {
       font-size: 21px;

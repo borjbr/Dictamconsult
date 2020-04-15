@@ -6,6 +6,11 @@
   width: 300px;
   display: block;
   margin: 0 auto;
+  @media (max-width: $screen-md) {
+    width: 100%;
+    height: 210px;
+    margin-bottom: 24px;
+  }
   
   &__info {
     position:absolute;
@@ -27,6 +32,9 @@
       margin: 0 auto;
       text-align: center;
       }
+    @media (max-width: $screen-md) {
+      display: none;
+    }
   }
 
   &:hover .c-card-team__info {
@@ -40,5 +48,33 @@
   }
   &--03 {
     background-image: url("../assets/images/equipo3.jpg");
+  }
+}
+
+
+// Card 
+
+.card {
+  border-bottom: 2px solid $color-primary;
+  margin-bottom: 12px;
+  text-align: left;
+  border-radius: 0;
+}
+
+.card-header {
+  text-align: left;
+  background-color: $color-white;
+  button {
+    color: $color-primary;
+    text-decoration: none;
+    @media (max-width: $screen-sm) {  
+      padding-left: 0;
+    }
+  }
+}
+
+.card-body {
+  @media (max-width: $screen-md) {
+    font-size: 13px;
   }
 }

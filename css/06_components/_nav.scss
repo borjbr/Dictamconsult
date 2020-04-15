@@ -5,12 +5,11 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: auto;
     transform: translate(100%, 0);
     display: flex;
     flex-direction: column;
-    padding: rem(54px);
-    padding-top: rem(90px);
+    padding-top: 1rem;
     text-align: center;
     visibility: hidden;
     z-index: 10;
@@ -167,10 +166,16 @@
     .c-nav__list {
       animation: open 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
       animation-fill-mode: forwards;
+      background-color: $color-primary;
     }
 
+    .c-nav__item a{color: $color-white;}
+
     .c-nav__hamburger i.icon-menu { display: none; }
-    .c-nav__hamburger i.icon-close { display: block; }
+    .c-nav__hamburger i.icon-close {
+      display: block;
+      color: $color-white;
+    }
   }
 
   &.close {

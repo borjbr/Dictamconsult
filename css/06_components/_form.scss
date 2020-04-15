@@ -1,6 +1,9 @@
 .c-form {
   color: $color-grey-dark;
   margin-top: 40px;
+  @media (max-width: $screen-md) {
+    margin-top: 20px;
+  }
   &__label {
     background-color: $color-white;
     font-size: rem(14px);
@@ -183,4 +186,10 @@
   background-color: $color-primary;
   color: $color-white;
   text-transform: uppercase;
-  float: right;}
+  float: right;
+  @media (max-width: $screen-md) {
+    width: 100%;
+    float: left;  
+    margin-top: 21px;
+  }
+}

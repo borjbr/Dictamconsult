@@ -1,0 +1,26 @@
+// TODO: pendiente
+// Transitions
+$transition-primary : all ease 0.3s;
+
+
+@mixin transition($transition : regular) {
+	@if $transition == regular {
+		transition: all ease 0.3s;
+  }
+
+	@if $transition == fast {
+    transition: all ease 0.2s;
+
+	}	@else {
+		transition: all ease 0.3s;
+	}
+}
+
+
+// TODO: acabar eliminando lo siguiente:
+$anim-standard:       ease-in-out;
+$anim-speed-faster:   100ms;
+$anim-speed-fast:     250ms;
+$anim-speed-moderate: 500ms;
+$anim-speed-slow:     800ms;
+$anim-speed-slower:   1000ms;

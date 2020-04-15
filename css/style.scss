@@ -2,6 +2,7 @@
 @import '01_settings/_variables';
 @import '01_settings/_fonts';
 @import '01_settings/_fonts-icon';
+@import '01_settings/_transitions';
 
 // tools
 @import '02_tools/_functions';
@@ -37,7 +38,6 @@
 @import '06_components/_button';
 @import '06_components/_ask';
 @import '06_components/_noted';
-@import '06_components/_detail';
 @import '06_components/_reference';
 @import '06_components/_why';
 @import '06_components/_list-icon';
@@ -46,6 +46,7 @@
 @import '06_components/_cookie';
 @import '06_components/_response';
 @import '06_components/_persons';
+@import '06_components/_support';
 
 // utilities
 @import '07_utilities/_utilities';

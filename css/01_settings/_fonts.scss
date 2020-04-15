@@ -36,3 +36,13 @@
   url('fonts/Lato-Semibold.svg') format('svg');
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'AleoBold';
+	src: url('../assets/fonts/Aleo/Aleo-Bold.eot');
+  src: local('☺'), url('../assets/fonts/Aleo/Aleo-Bold.woff') format('woff'),
+   url('../assets/fonts/Aleo/Aleo-Bold.ttf') format('truetype'),
+    url('../assets/fonts/Aleo/Aleo-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
