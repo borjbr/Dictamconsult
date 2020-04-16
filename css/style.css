@@ -1025,8 +1025,20 @@ p a:hover, p a:focus {
 @media (max-width: 768px) {
   .c-card-team {
     width: 100%;
-    height: 210px;
+    height: 250px;
+    border-radius: 10px;
     margin-bottom: 24px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .c-card-team {
+    width: 75%;
+    height: 260px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    background-size: cover;
   }
 }
 
@@ -1056,7 +1068,9 @@ p a:hover, p a:focus {
 
 @media (max-width: 768px) {
   .c-card-team__info {
-    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 
@@ -1076,6 +1090,34 @@ p a:hover, p a:focus {
   background-image: url("../assets/images/equipo3.jpg");
 }
 
+.c-card-team__info-mobile {
+  position: absolute;
+  bottom: 0;
+  background: #4470a5;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.c-card-team__info-mobile h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.c-card-team__info-mobile hr {
+  display: block;
+  margin: 8px auto;
+  width: 85%;
+  border: 0.5px solid #ffffff;
+}
+
+.c-card-team__info-mobile p {
+  font-size: 14px;
+  margin: 0;
+}
+
 .card {
   border-bottom: 2px solid #4470a5;
   margin-bottom: 12px;
@@ -1083,26 +1125,51 @@ p a:hover, p a:focus {
   border-radius: 0;
 }
 
-.card-header {
+.card .card-header {
   text-align: left;
   background-color: #ffffff;
+  display: table;
 }
 
-.card-header button {
+.card .card-header .icon {
+  width: 20px;
+  font-size: 21px;
+}
+
+.card .card-header button {
   color: #4470a5;
   text-decoration: none;
 }
 
-@media (max-width: 576px) {
-  .card-header button {
+@media (max-width: 768px) {
+  .card .card-header button {
     padding-left: 0;
+    width: 100%;
+    position: relative;
+    text-align: left;
+  }
+  .card .card-header button::before {
+    content: "\e908";
+    font-family: "iconFont";
+    font-size: 18px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 0px;
+    top: 5px;
+    position: absolute;
+    color: #4470a5;
   }
 }
 
 @media (max-width: 768px) {
-  .card-body {
+  .card .card-body {
     font-size: 13px;
   }
+}
+
+.card .card-body ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .c-card-title {
@@ -1440,12 +1507,22 @@ p a:hover, p a:focus {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .c-footer-logo img {
+    width: 50%;
+  }
+}
+
 .c-footer-info {
   margin-top: 1.75rem;
   border-top: 1px solid #ffffff;
   color: #ffffff;
   text-align: center;
   padding-top: 32px;
+}
+
+.c-footer-info p {
+  margin-bottom: 0;
 }
 
 .c-footer-info .link-aviso {
@@ -1681,6 +1758,15 @@ p a:hover, p a:focus {
     float: left;
     margin-top: 21px;
   }
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0;
+  width: 25px;
+  margin-left: 0;
+  height: 26px;
+  padding: 0 !important;
 }
 
 @media (max-width: 576px) {
@@ -2733,6 +2819,7 @@ p a:hover, p a:focus {
   overflow: hidden;
   bottom: 0;
   right: 0;
+  z-index: 9999;
   margin: 16px;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -3023,6 +3110,7 @@ p a:hover, p a:focus {
 @media (max-width: 576px) {
   .u-firma-title {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3081,6 +3169,7 @@ p a:hover, p a:focus {
 @media (max-width: 576px) {
   .u-area-title {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3199,6 +3288,7 @@ p a:hover, p a:focus {
 @media (max-width: 576px) {
   .u-equipo-title {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3241,6 +3331,7 @@ p a:hover, p a:focus {
 @media (max-width: 576px) {
   .u-contacto-title {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3262,6 +3353,12 @@ p a:hover, p a:focus {
 
 .u-contacto-info {
   text-align: left;
+}
+
+@media (max-width: 576px) {
+  .u-contacto-info {
+    margin-bottom: 30px;
+  }
 }
 
 .u-contacto-info__title {
@@ -3544,6 +3641,26 @@ strong {
   position: absolute;
   bottom: 5%;
   right: 0;
+}
+
+@media (max-width: 576px) {
+  .modal-image {
+    width: 35%;
+    bottom: 3%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal.show .modal-dialog {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-content {
+    border-radius: 0;
+    border: 0;
+  }
 }
 
 @media (min-width: 576px) {

@@ -74,4 +74,21 @@
   position: absolute;
   bottom: 5%;
   right: 0;
+  @media (max-width: $screen-sm) {  
+   width: 35%;
+   bottom: 3%;
+  }
+}
+
+.modal.show .modal-dialog {
+  @media (max-width: $screen-sm) {  
+    margin: 0;
+  }
+}
+
+.modal-content {
+  @media (max-width: $screen-sm) {  
+    border-radius: 0;
+    border: 0;
+  }
 }

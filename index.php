@@ -2,65 +2,30 @@
 <html lang="es">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40694529-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-40694529-3');
-  </script>
-
-  <!-- Google Tag Manager
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WMZPD9S');</script>
-    End Google Tag Manager -->
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <title>Dictamconsult</title>
-  <meta name="description" content="." />
-  <meta name="keywords" content="" />
-  <meta name="author" content="" />
-  <meta name="copyright" content="" />
+  <title>DICTAMCONSULT</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="DICTAMCONSULT, abogados, derecho, fiscal, penal, " />
+  <meta name="author" content="Borja Rincones" />
+  <meta name="copyright" content="Borja Rincones" />
 
   <meta property="og:locale" content="es_ES" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="DICTAMCONSULT" />
   <meta property="og:description" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:site_name" content="" />
+  <meta property="og:url" content="https://www.dictamconsult.com" />
+  <meta property="og:site_name" content="Dictamconsult" />
 
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="32x32">
 </head>
 
-<body>
-  <!-- Google Tag Manager (noscript)
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMZPD9S"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    End Google Tag Manager (noscript) -->
-
-  <!-- cookie -->
-  <!-- <div class="c-cookie" role="alert" aria-live="assertive">
-    <div class="c-cookie__inner">
-      <div class="c-cookie__content">
-        <p>Utilizamos <strong>cookies</strong> propias y de terceros para mejorar nuestros servicios y mostrarle
-          publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continua
-          navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a
-            href="politica-de-cookies.html" target="_blank" title="Ir a política de cookies">pulsando aquí</a></p>
-      </div>
-      <button class="c-button c-button--primary js-cookie-accept">Aceptar</button>
-    </div>
-  </div> -->
-
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
   <!-- Title -->
   <h1 class="u-visuallyhidden">Página oficial Dictamconsult</h1>
 
@@ -80,7 +45,7 @@
   <header class="c-header headroom">
     <!-- logotype -->
     <figure class="c-header__logotype">
-      <a href="index.html" title="Ir a la página de inicio">
+      <a href="index.php" alt="ir a inicio" title="Ir a la página de inicio">
         <div class="lrg-logo"></div>
       </a>
     </figure>
@@ -97,7 +62,7 @@
       <!-- list-->
       <ul class="c-nav__list" aria-label="Listado menú">
         <li class="c-nav__item">
-          <a href="index.html" class="c-nav__link js-scroll-trigger" title="Ir a inicio">INICIO</a>
+          <a href="index.php" class="c-nav__link js-scroll-trigger" title="Ir a inicio">INICIO</a>
         </li>
         <li class="c-nav__item">
           <a href="#firma" class="c-nav__link js-scroll-trigger" title="Ir a firma">FIRMA</a>
@@ -112,7 +77,7 @@
           <a href="#contacto" class="c-nav__link js-scroll-trigger" title="Ir a contacto">CONTACTO</a>
         </li>
         <li class="c-nav__item">
-          <a href="/" class="c-nav__link" title="Ir a blog">BLOG</a>
+          <a href="https://dictamconsult.blogspot.com/" target="_blank" class="c-nav__link" title="Ir a blog">BLOG</a>
         </li>
       </ul>
     </nav>
@@ -132,7 +97,7 @@
               <h2>CALIDAD Y<br> CERCANÍA</h2>
             </div>
           </div>
-          <img class="d-block w-100" src="assets/images/slider-1.png" alt="First slide">
+          <img class="d-block w-100" src="assets/images/slider-1.png" title="dictamconsult abogados" alt="imagen slider1">
         </div>
         <div class="carousel-item">
           <div class="c-hero__inner">
@@ -141,7 +106,7 @@
               <h2>GARANTIZAMOS<br>TU SEGURIDAD</h2>
             </div>
           </div>
-          <img class="d-block w-100" src="assets/images/slider-2.jpg" alt="Second slide">
+          <img class="d-block w-100" src="assets/images/slider-2.jpg" title="dictamconsult abogados" alt="imagen slider2">
         </div>
         <div class="carousel-item">
           <div class="c-hero__inner">
@@ -150,7 +115,7 @@
               <h2>VEN Y <br>CONÓCENOS</h2>
             </div>
           </div>
-          <img class="d-block w-100" src="assets/images/slider-3.jpg" alt="Third slide">
+          <img class="d-block w-100" src="assets/images/slider-3.jpg" title="dictamconsult abogados" alt="imagen slider3">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -170,29 +135,13 @@
     <section id="firma" class="u-firma" data-aos="fade-top">
       <div class="container">
         <h2 class="u-firma-title">La firma</h2>
-        <p class="u-firma-text"><strong>DICTAMCONSULT Abogados & Economistas</strong> es un despacho profesional que,
-          fundado en el año 2006, nace para dar cobertura legal a empresas y profesionales en situación concursal y
-          prestar asistencia a los distintos Juzgados de lo Mercantil.</p>
-        <p class="u-firma-text">En este sentido, la Firma cuenta con un equipo de profesionales experimentados en la
-          preparación de la documentación a presentar tanto por empresas como por particulares en situación de
-          insolvencia ante los Juzgados, y que se acompaña a la solicitud de concurso, al tiempo que, como sociedad
-          profesional debidamente acreditada e inscrita en los correspondientes listados oficiales,
-          <strong>DICTAMCONSULT Abogados & Economistas</strong> ha resultado designada por parte de los Juzgados de lo
-          Mercantil como Administradora Concursal en distintos procedimientos concursales, prestando un servicio
-          integral desde el mismo momento de su nombramiento y hasta el archivo del expediente.</p>
-        <p class="u-firma-text">Paralelamente, la Firma incorpora los departamentos de derecho penal, derecho fiscal y
-          tributario y derecho civil, lo que le permite tener una visión más global y estructurada de las distintas
-          situaciones económicas y jurídicas a las que se enfrentan particulares y empresas en el día a día de su
-          actividad profesional y personal.</p>
-        <p class="u-firma-text">Asimismo, <strong>DICTAMCONSULT Abogados & Economistas</strong> cuenta con expertos
-          economistas y auditores especializados en la elaboración de informes económicos y periciales de cualquier
-          tipo.</p>
-        <p class="u-firma-text">La Firma apuesta por un trato directo, cercano y transparente con el cliente. Para ello,
-          nuestro trabajo parte de un estudio detallado previo de las condiciones particulares del cliente y un análisis
-          exhaustivo de sus necesidad legales, para posteriormente ofrecer un servicio jurídico de máxima calidad y
-          eficiencia.</p>
-        <p class="u-firma-text">La <strong>firma DICTAMCONSULT Abogados & Economistas</strong> pertenece a la sociedad
-          DICTAMCONSULT, S.L.P. (sociedad profesional inscrita en el Ilustre Colegio de Economistas de Madrid).</p>
+        <p class="u-firma-text"><strong>DICTAMCONSULT Abogados & Economistas</strong> es un despacho profesional que, fundado en el año 2006, nace para dar cobertura legal a empresas y profesionales en situación concursal y prestar asistencia a los distintos Juzgados de lo Mercantil.</p>
+        <p class="u-firma-text">En este sentido, la Firma cuenta con un equipo de profesionales experimentados en la preparación de la documentación a presentar tanto por empresas como por particulares en situación de insolvencia ante los Juzgados, y que se acompaña a la solicitud de concurso, al tiempo que, como sociedad profesional debidamente acreditada e inscrita en los correspondientes listados oficiales, <strong>DICTAMCONSULT Abogados & Economistas</strong> ha resultado designada por parte de los Juzgados de lo
+        Mercantil como Administradora Concursal en distintos procedimientos concursales, prestando un servicio integral desde el mismo momento de su nombramiento y hasta el archivo del expediente.</p>
+        <p class="u-firma-text">Paralelamente, la Firma incorpora los departamentos de derecho penal, derecho fiscal y tributario y derecho civil, lo que le permite tener una visión más global y estructurada de las distintas situaciones económicas y jurídicas a las que se enfrentan particulares y empresas en el día a día de su actividad profesional y personal.</p>
+        <p class="u-firma-text">Asimismo, <strong>DICTAMCONSULT Abogados & Economistas</strong> cuenta con expertos economistas y auditores especializados en la elaboración de informes económicos y periciales de cualquier tipo.</p>
+        <p class="u-firma-text">La Firma apuesta por un trato directo, cercano y transparente con el cliente. Para ello, nuestro trabajo parte de un estudio detallado previo de las condiciones particulares del cliente y un análisis exhaustivo de sus necesidad legales, para posteriormente ofrecer un servicio jurídico de máxima calidad y eficiencia.</p>
+        <p class="u-firma-text">La <strong>firma DICTAMCONSULT Abogados & Economistas</strong> pertenece a la sociedad DICTAMCONSULT, S.L.P. (sociedad profesional inscrita en el Ilustre Colegio de Economistas de Madrid).</p>
       </div>
     </section>
 
@@ -225,7 +174,7 @@
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
-            <img src="assets/images/tab-logo.png" class="tab-content-img">
+            <img src="assets/images/tab-logo.png" title="dictamconsult fiscal" alt="logo fiscal" class="tab-content-img">
             <div class="tab-pane fade show active" id="nav-fiscal" role="tabpanel" aria-labelledby="nav-fiscal-tab">
               <h3 class="tab-content-title">Derecho Concursal</h3>
               <p>Con más de 20 años de asesoramiento en esta materia, el departamento concursal de <strong>DICTAMCONSULT
@@ -351,7 +300,7 @@
           <div id="accordion">
             <div class="card">
               <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
+                <i class="icon icon-calculator"></i><h5 class="mb-0">
                   <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                     aria-controls="collapseOne">Derecho fiscal</button>
                 </h5>
@@ -378,7 +327,7 @@
             </div>
             <div class="card">
               <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
+                <i class="icon icon-strongbox"></i><h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">Herencias y sucesiones</button>
                 </h5>
@@ -413,7 +362,7 @@
             </div>
             <div class="card">
               <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
+                <i class="icon icon-auction"></i><h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
                     aria-expanded="false" aria-controls="collapseThree">Derecho Penal</button>
                 </h5>
@@ -451,7 +400,7 @@
             </div>
             <div class="card">
               <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
+                <i class="icon icon-strongbox"></i><h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
                     aria-expanded="false" aria-controls="collapseThree">
                     Derecho fiscal y tributario
@@ -488,7 +437,7 @@
             </div>
             <div class="card">
               <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
+                <i class="icon icon-stamp"></i><h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
                     aria-expanded="false" aria-controls="collapseThree">Informes Económicos y Periciales</button>
                 </h5>
@@ -529,29 +478,44 @@
       <div class="container">
         <h2 class="u-equipo-title">Nuestro equipo</h2>
         <div class="row">
-          <div class="col-xs-12 col-md-4">
+          <div class="col-sm-12 col-md-4" data-aos="fade-left">
             <a href="#" role="button" class="" data-toggle="modal" data-target="#equipo1">
               <div class="c-card-team c-card-team--01">
                 <div class="c-card-team__info">
                   <h4>Francisco José Benítez</h4>
                 </div>
+                <div class="c-card-team__info-mobile d-md-block d-lg-none">
+                  <h4>Francisco José Benítez</h4>
+                  <hr>
+                  <p>Socio Director</p>
+                </div>
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-sm-12 col-md-4" data-aos="fade-bottom">
             <a href="#" role="button" class="" data-toggle="modal" data-target="#equipo2">
               <div class="c-card-team c-card-team--02">
                 <div class="c-card-team__info">
                   <h4>Juan Carlos Benítez</h4>
                 </div>
+                 <div class="c-card-team__info-mobile d-md-block d-lg-none">
+                    <h4>Juan Carlos Benítez</h4>
+                    <hr>
+                    <p>Socio Director</p>
+                </div>
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-md-4">
+          <div class="col-sm-12 col-md-4" data-aos="fade-right">
             <a href="#" role="button" class="" data-toggle="modal" data-target="#equipo3">
               <div class="c-card-team c-card-team--03">
                 <div class="c-card-team__info">
                   <h4>Sergio Benítez</h4>
+                </div>
+                 <div class="c-card-team__info-mobile d-md-block d-lg-none">
+                    <h4>Sergio Benítez</h4>
+                    <hr>
+                    <p>Socio</p>
                 </div>
               </div>
             </a>
@@ -566,7 +530,7 @@
       <div class="container">
         <h2 class="u-contacto-title">Contáctanos</h2>
         <div class="row">
-          <div class="col-xs-12 col-md-12 col-lg-4" data-aos="fade-left">
+          <div class="col-sm-12 col-md-12 col-lg-4" data-aos="fade-left">
             <div class="u-contacto-info">
               <h5 class="u-contacto-info__title">Visítanos en</h5>
               <div class="u-contacto-info__content">
@@ -586,43 +550,48 @@
                 <a href="mailto:contacto@dictamconsult.com"
                   title="mail a contacto@dictamconsult.com">contacto@dictamconsult.com</a>
               </div>
+              <h5 class="u-contacto-info__title">Síguenos</h5>
+              <a href="https://www.linkedin.com/company/dictamconsult-s-l-p" target="_blank" title="ir a linkedin"><i class="icon icon-linkedin-logo"></i></a>
             </div>
           </div>
-          <div class="col-xs-12 col-md-12 col-lg-8 ta-left" data-aos="fade-left">
+          <div class="col-sm-12 col-md-12 col-lg-8 ta-left" data-aos="fade-left">
             <h5 class="u-contacto-info__title">Escríbenos</h5>
             <p class="u-contacto-info__text">Nuestros abogados se pondrán en contacto contigo a la mayor brevedad
               posible.</p>
-            <form class="c-form" class="" id="" method="POST" enctype="multipart/form-data">
+
+            <form class="c-form" id="form"  method="POST" enctype="multipart/form-data">
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellidos"
-                    required="required">
+                  <input type="text" class="form-control" name="nombre" id="nombre" data-parsley-required="true" data-parsley-pattern="^\b(?![\s]+$)+[a-zA-Z\u00C0-\u024F\s]+\b$" data-parsley-required-message="Este valor es requerido" data-parsley-pattern-message="Nombre no válido" data-parsley-trigger="focusout" placeholder="Nombre y apellidos"
+                    >
                 </div>
                 <div class="form-group col-md-4">
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="text" class="form-control" name="email" id="email" data-parsley-required="true" data-parsley-type="email" data-parsley-required-message="Este valor es requerido" data-parsley-type-message="email no válido"
+                    data-parsley-trigger="focusout" placeholder="Email">
                 </div>
                 <div class="form-group col-md-4">
-                  <input type="text" class="form-control" id="asunto" placeholder="Teléfono">
+                  <input type="tel" nome="telefono" class="form-control" id="telefono" data-parsley-type="digits" data-parsley-minlength="9" data-parsley-type-message="Solo se permite dígitos" data-parsley-minlength-message="Debería de tener 9 caracteres o más" data-parsley-trigger="focusout" placeholder="Teléfono">
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="inputAddress" placeholder="Asunto">
+                <input type="text" class="form-control" id="asunto" data-parsley-required-message="Este valor es requerido" name="asunto" placeholder="Asunto">
               </div>
               <div class="form-group">
-                <textarea class="form-control" aria-label="With textarea" placeholder="Consulta"></textarea>
+                <textarea class="form-control" data-parsley-required-message="Este valor es requerido" aria-label="With textarea" placeholder="Consulta" id="consulta" name="consulta"></textarea>
               </div>
               <div class="form-check c-form__checkbox">
                 <div class="form-check c-form__checkbox">              
                   <div class="form-check c-form__checkbox">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <input class="form-check-input" type="checkbox" name="condiciones" id="condiciones" data-parsley-required="true" data-parsley-required-message="Este valor es requerido" data-parsley-trigger="click">
                     <label class="form-check-label" for="gridCheck">
                       He leído y acepto la política de privacidad
                     </label>
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn btn-form">Enviar</button>
+              <button type="submit" class="btn btn-form" disabled>Enviar</button>
             </form>
+
           </div>
         </div>
         <div class="row">
@@ -644,18 +613,18 @@
     <div class="container">
       <div class="c-footer-logo row">
         <div class="col-md-12">
-          <img src="assets/images/logo-white.png" title="" alt="logotipo Dictamconsult">
+          <img src="assets/images/logo-white.png" title="dictamconsult" alt="logotipo Dictamconsult">
         </div>
       </div>
       <div class="c-footer-info row">
-        <div class="col-xs-12 col-md-4">
-          <a href="/" class="link-aviso" title="ir aviso legal">Aviso Legal</a>
+        <div class="col-sm-12 col-md-4">
+          <a href="assets/avisolegal.pdf" target="_blank" class="link-aviso" title="ir aviso legal">Aviso Legal</a>
         </div>
-        <div class="col-xs-12 col-md-4">
+        <div class="col-sm-12 col-md-4">
           <p>© 2020 DICTAMCONSULT</p>
         </div>
-        <div class="col-xs-12 col-md-4">
-          <p>LOPD</p>
+        <div class="col-sm-12 col-md-4">
+         <a href="assets/LOPD.pdf" target="_blank" class="link-aviso" title="ir lopd">LOPD</a>
         </div>
       </div>
     </div>
@@ -668,16 +637,16 @@
   <div class="modal fade" id="equipo1" tabindex="-1" role="dialog" aria-labelledby="team1" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-        <img src="assets/images/modal-logo.png" class="modal-image" alt="dictamconsult">
+        <img src="assets/images/modal-logo.png" title="dictamconsult" class="modal-image" alt="dictamconsult">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">x</span>
           </button>
         </div>
         <div class="modal-body">
-          <div class="container-fluid">
+          <div class="container-fluid no-gutters">
             <div class="row">
-              <div class="col-xs-12 col-md-12 col-lg-8">
+              <div class="col-sm-12 col-md-12 col-lg-8">
                 <div class="modal-body__content">
                   <h5>Área de especialización</h5>
                   <ul>
@@ -720,13 +689,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-12 col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-12 col-lg-4 d-none d-sm-block">
                 <div class="modal-body__photo modal-body__photo--01">
                   <p class="modal-body__photo-name">Francisco José Benitez</p>
                 </div>
                 <div class="modal-body__info">
-                  <a href="">fjbenitez@dictamconsult.com</a>
-                  <a href="">(+34) 608 059 954</a>
+                  <a href="mailto:fjbenitez@dictamconsult.com" title="mail a francisco jose">fjbenitez@dictamconsult.com</a>
+                  <a href="tel:(+34) 608 059 954" title="llamar a (+34) 608 059 954">(+34) 608 059 954</a>
                 </div>
               </div>
             </div>
@@ -747,7 +716,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="container-fluid">
+          <div class="container-fluid no-gutters">
             <div class="row">
               <div class="ol-xs-12 col-md-12 col-lg-8">
                 <div class="modal-body__content">
@@ -785,13 +754,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-12 col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-12 col-lg-4 d-none d-sm-block">
                 <div class="modal-body__photo modal-body__photo--02">
                   <p class="modal-body__photo-name">Juan Carlos Benítez</p>
                 </div>
                 <div class="modal-body__info">
-                  <a href="">jcbenitez@dictamconsult.com</a>
-                  <a href="">(+34) 608 059 954</a>
+                  <a href="mailto:jcbenitez@dictamconsult.com" title="mail to juan carlos benitez">jcbenitez@dictamconsult.com</a>
+                  <a href="tel:(+34) 608 059 954">(+34) 608 059 954</a>
                 </div>
               </div>
             </div>
@@ -812,7 +781,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="container-fluid">
+          <div class="container-fluid no-gutters">
             <div class="row">
               <div class="ol-xs-12 col-md-12 col-lg-8">
                 <div class="modal-body__content">
@@ -848,7 +817,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-xs-12 col-md-12 col-lg-4">
+              <div class="col-sm-12 col-md-12 col-lg-4 d-none d-sm-block">
                 <div class="modal-body__photo modal-body__photo--03">
                   <p class="modal-body__photo-name">Sergio Benítez Gallego</p>
                 </div>
@@ -866,10 +835,10 @@
 
 
   <!-- Soporte 24/7  -->
-  <a href="tel:91 141 09 13" class="c-support">
+  <a href="tel:(+34) 699 155 303" class="c-support">
     <div class="c-support__info">
       <span class="c-support__info-text"> ¿Necesitas ayuda?</span>
-      <span class="c-support__info-number"> 91 141 09 13</span>
+      <span class="c-support__info-number"> (+34) 699 155 303</span>
     </div>
     <div class="c-support__icon">
       <i class="icon icon-call"></i>
@@ -882,7 +851,6 @@
   <script src="js/lib/jQuery.headroom.js"></script>
   <script src="js/lib/aos.js"></script>
   <script src="js/lib/parsley.min.js"></script>
-  <script src="js/lib/ofi.min.js"></script>
   <script src="js/lib/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>

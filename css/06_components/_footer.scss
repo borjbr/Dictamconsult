@@ -4,6 +4,9 @@
   &-logo img {
     display: block;
     margin: 0 auto;
+    @media (max-width: $screen-md) {
+      width: 50%;
+    }
   }
   &-info {
     margin-top: rem(28px);
@@ -11,6 +14,7 @@
     color: $color-white;
     text-align: center;
     padding-top: 32px;
+    p {margin-bottom: 0;}
 
     .link-aviso {
       text-decoration: none;

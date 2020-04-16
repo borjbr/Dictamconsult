@@ -1,84 +1,89 @@
 <?php
-  // Import PHPMailer classes into the global namespace
-  // These must be at the top of your script, not inside a function
-  use PHPMailer\PHPMailer\PHPMailer;
-  use PHPMailer\PHPMailer\Exception;
 
-  //Load Composer's autoloader
-  require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+$nombre = $_POST["nombre"];
+$email = $_POST["email"];
+$telefono = $_POST["telefono"];
+$asunto = $_POST["asunto"];
+$consulta = $_POST["consulta"];
+$condiciones = $_POST["condiciones"];
 
-  $name = $_POST["name"];
-	$surname = $_POST["surname"];
-  $email = $_POST["mail"];
-  $phone = $_POST["phone"];
-  $terms = $_POST["condition"];
-  $newsletter = $_POST["newsletter"];
+if ($nombre == NULL | $email == NULL | $asunto == NULL | $contenido == NULL) {
+    echo '<script> alert("Error al enviar el correo, revisar los campos obligatorios");</script>';
+    echo '<meta http-equiv="refresh" content="0">';
+    die();
+}
 
-  // checked value
-  $terms = (empty($terms) ? 'no' : 'si');
-  $newsletter = (empty($newsletter) ? 'no' : 'si');
+/////// /////// /////// /////// /////// ENVIA EL EMAIL USANDO UNA CUENTA DE HOTMAIL /////// /////// /////// /////// /////// /////// /////// 
 
+$mensaje = "Detalles del formulario de contacto:<br>"; // aquí pones el contenido del mensaje
   // prepare email body text
-  $body .= "Nombre: ";
-  $body .= $name;
-  $body .= "<br>";
+$mensaje .= "Nombre: ";
+$mensaje .= $nombre;
+$mensaje .= "<br>";
 
-	$body .= "Apellidos: ";
-	$body .= $surname;
-  $body .= "<br>";
+$mensaje .= "Email: ";
+$mensaje .= $email;
+$mensaje .= "<br>";
 
-	$body .= "Teléfono: ";
-	$body .= $phone;
-  $body .= "<br>";
+$mensaje .= "Teléfono: ";
+$mensaje .= $telefono;
+$mensaje .= "<br>";
 
-  $body .= "E-mail: ";
-  $body .= $email;
-  $body .= "<br>";
+$mensaje .= "Asunto: ";
+$mensaje .= $asunto;
+$mensaje .= "<br>";
 
-  $body .= "Aceptación GRPD: ";
-  $body .= $terms;
-  $body .= "<br>";
+$mensaje .= "Consulta: ";
+$mensaje .= $consulta;
+$mensaje .= "<br>";
 
-  $body .= "Recibir información: ";
-  $body .= $newsletter;
-  $body .= "<br>";
+$mensaje .= "Aceptación condiciones: ";
+$mensaje .= $condiciones;
+$mensaje .= "<br>";
 
-  if(!empty($email) && $email != ''){
-    sendMail($body);
-  }
+$para = 'contacto@dictamconsult.com';                         //dirección de destino gauto@gmotor2015.net
+$nombreUsuarioHotmail = "dictamconsult@hotmail.com";         ///Aquí pones tu dirección de email de hotmail automovilesGB@hotmail.com
+$passUsuarioHotmail = "1234@Dictam";           ///Aquí pones tu contraseña de email de hotmail misma pw
+require 'PHPMailerAutoload.php';
 
-  function sendMail($body = null){
+$mail = new PHPMailer();
+$mail->CharSet = 'UTF-8';
 
-    $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
-    try {
-      //Server settings
-      $mail->SMTPDebug = 0;                                 // Enable verbose debug output
-      $mail->isSMTP();                                      // Set mailer to use SMTP
-      $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-      $mail->SMTPAuth = true;                               // Enable SMTP authentication
-      $mail->Username = 'babelcreativa@gmail.com';                 // SMTP username
-      $mail->Password = 'Bbc_0000';                           // SMTP password
-      $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-      $mail->Port = 587;                                    // TCP port to connect to
-      $mail->CharSet = 'UTF-8';
 
-      //Recipients
-      $mail->setFrom('babelcreativa@gmail.com', 'BABEL Creativa');
-      // $mail->addAddress('communication@babel.es');     // Add a recipient
-      // $mail->addReplyTo('babelcreativa@gmail.com', 'BABEL Creativa');
-      // $mail->addCC('roksana.nechay@babel.es');
-      $mail->addAddress('info@amaine.es');
+$mail->Host = "smtp.live.com";
+$mail->SMTPDebug = 2;
+$mail->SMTPSecure = 'ssl';
+$mail->SMTPAuth = true;
+$mail->Host = "smtp.live.com";
+$mail->Port = 25;
 
-      //Content
-      $mail->isHTML(true);
-      $mail->Subject = 'Nueva Inscripcion Amaine';
-      $mail->Body    = $body;
-      //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+$mail->Username = $nombreUsuarioHotmail;
+$mail->Password = $passUsuarioHotmail;
 
-      $mail->send();
-      return true;
-    } catch (Exception $e) {
-        echo 'El mensaje no ha podido ser enviado. Mailer Error: ', $mail->ErrorInfo;
-    }
-  }
+
+$mail->From = 'Dictamconsult@hotmail.com';   /// email desde el que quieres que aparezca el envío.
+$mail->FromName = 'Administrador de la web';    // el nombre que quieres que aparezca en el campo from
+$mail->addAddress($para);
+$mail->addReplyTo('yo@yo.com', 'hola');  //aquí pones la dirección de email al que quieres enviar los correos si le dan a responder, y el nombre del campo "para" que quieres que aparezca
+
+
+$mail->WordWrap = 50;                                 // el ancho máximo de cada línea
+
+$mail->isHTML(true);                                  // Set email format to HTML
+
+$mail->Subject = 'Contacto desde el sitio web';     // título del email
+$mail->Body = $mensaje;
+$mail->AltBody = 'Agregar esta dirección para mostrar el email correctamente';
+
+if (!$mail->send()) {
+    echo '<script> alert("Hubo un problema al enviar el correo, vuelva a intentarlo");</script>';
+}
+
+if ($nombre !== NULL | $email !== NULL | $asunto !== NULL | $contenido !== NULL) {
+    echo '<script> alert("Mensaje enviado correctamente");</script>';
+    echo '("<meta http-equiv="refresh" content="0">")';
+    die();
+}
+
+/////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// ////////////// /////// /////// /////// /////// /////// /////// /////// /////// /////// /////// ///////
 ?>
