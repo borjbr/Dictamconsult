@@ -10,34 +10,60 @@ $(function() {
   //   }
   // });
 
+  //particles
+  if ($('#particles-js').length) {
+    particlesJS.load('particles-js', 'data/particles.json', function() {});
+  }
+
+
+
   // AOS
   AOS.init();
 
   
   // navigation
-  // var $nav = $('.js-nav');
-  // var $navBody = $('body, html');
-  // var $navHamburger= $nav.find('.c-nav__hamburger');
+  var $nav = $('.js-nav');
+  var $navBody = $('body, html');
+  var $navHamburger= $nav.find('.c-nav__hamburger');
 
-  // $navHamburger.on('click', function() {
-  //   if($nav.hasClass('open')) {
-  //     $navBody.removeClass('c-nav-noscroll');
-  //     $nav.removeClass('open');
-  //     $nav.addClass('close');
-  //   } else {
-  //     $nav.removeClass('close');
-  //     $nav.addClass('open');
-  //     $navBody.addClass('c-nav-noscroll');
-  //   }
-  // });
+  $navHamburger.on('click', function() {
+    if($nav.hasClass('open')) {
+      $navBody.removeClass('c-nav-noscroll');
+      $nav.removeClass('open');
+      $nav.addClass('close');
+    } else {
+      $nav.removeClass('close');
+      $nav.addClass('open');
+      $navBody.addClass('c-nav-noscroll');
+    }
+  });
 
   // navigation items
-  // var $item = $nav.find('.c-nav__list').find('li');
+  var $item = $nav.find('.c-nav__list').find('li');
 
-  // $item.on('click', function() {
-  //   $item.removeClass('active');
-  //   $(this).addClass('active');
-  // });
+  $item.on('click', function() {
+    $item.removeClass('active');
+    $(this).addClass('active');
+  });
+
+  // navigation items mobile
+  var $itemMobile = $nav.find('.c-nav__list-mobile').find('li');
+
+  $itemMobile.on('click', function() {
+    $itemMobile.removeClass('active');
+    $(this).addClass('active');
+    if($nav.hasClass('open')) {
+      $navBody.removeClass('c-nav-noscroll');
+      $nav.removeClass('open');
+      $nav.addClass('close');
+    } else {
+      $nav.removeClass('close');
+      $nav.addClass('open');
+      $navBody.addClass('c-nav-noscroll');
+    }
+  });
+
+
 
   // // navigation accesibility
   // var screenXL = 1200;
@@ -60,33 +86,33 @@ $(function() {
   //   }, 500);
   // });
 
-  function access() {
-    var $elemsFocus = $navAccess.find('a, button');
-    var firstElement = $elemsFocus.first()[0];
-    var lastElement = $elemsFocus.eq(-2)[0];
+  // function access() {
+  //   var $elemsFocus = $navAccess.find('a, button');
+  //   var firstElement = $elemsFocus.first()[0];
+  //   var lastElement = $elemsFocus.eq(-2)[0];
 
-    $navAccess.on('keydown', function(e) {
-      var keyCode = e ? e.keyCode : '';
-      if(keyCode == tab) {
-        if(document.activeElement === firstElement) {
-          if(e.shiftKey) {
-            if($navAccess.hasClass('close')) {
-              firstElement.blur();
-            } else {
-              e.preventDefault();
-              lastElement.focus();
-            }
-          }
-        }
-        if(document.activeElement === lastElement) {
-          if(!e.shiftKey) {
-            e.preventDefault();
-            firstElement.focus();
-          }
-        }
-      }
-    });
-  }
+  //   $navAccess.on('keydown', function(e) {
+  //     var keyCode = e ? e.keyCode : '';
+  //     if(keyCode == tab) {
+  //       if(document.activeElement === firstElement) {
+  //         if(e.shiftKey) {
+  //           if($navAccess.hasClass('close')) {
+  //             firstElement.blur();
+  //           } else {
+  //             e.preventDefault();
+  //             lastElement.focus();
+  //           }
+  //         }
+  //       }
+  //       if(document.activeElement === lastElement) {
+  //         if(!e.shiftKey) {
+  //           e.preventDefault();
+  //           firstElement.focus();
+  //         }
+  //       }
+  //     }
+  //   });
+  // }
 
   // smooth scrolling
   // var $body = $('body, html');
@@ -173,53 +199,6 @@ $(function() {
   });
 
 
-  // cookie
-  var st = {
-    pane: '.c-cookie',
-    acceptButton: '.js-cookie-accept'
-  };
-
-  var dom = {};
-
-  var catchDom = function () {
-    dom.pane = $(st.pane);
-    dom.acceptButton = $(st.acceptButton);
-  };
-
-  var susbscribeEvents = function () {
-    dom.acceptButton.on('click', events.acceptCookies);
-  };
-
-  var events = {
-    acceptCookies: function (e) {
-      localStorage.setItem('dictamconsult', 'accepted');
-      dom.pane.removeClass('c-cookie--visible');
-    }
-  };
-
-  var checkCookies = function () {
-    if (localStorage.getItem('dictamconsult') && localStorage.getItem('dictamconsult') === 'accepted') {
-      dom.pane.removeClass('c-cookie--visible');
-    } else {
-      dom.pane.addClass('c-cookie--visible');
-    }
-  };
-
-  catchDom();
-  susbscribeEvents();
-  checkCookies();
-
-});
-
-(function() {
-  try {
-    // centra imagenes recortando por los lados proporcionalmente
-    objectFitImages();
-
-  } catch(err) {
-    alert("Error: " + err + ".");
-  }
-})();
 
 //cambiar logotipo scroll
 
@@ -240,4 +219,77 @@ $(function() { var logo = $(".lrg-logo"); $(window).scroll(function() {
         }
       }
   });
+
+	function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires + "; path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+var user=getCookie("_namecookie");
+if (user == "") {
+    $('#js_barra_aceptacion_cookie').css({
+      display: 'block'
+    });
+ }
+$('#js_btn_cookie').on('click', function(e) {
+  e.preventDefault();
+  user = 'Dictamconsult';
+  if (user != "" && user != null) {
+    setCookie("_namecookie", user, 30);
+    $('#js_barra_aceptacion_cookie').css({
+      display: 'none'
+    });
+    console.log("cookie creada: " + user);
+   }
+});
+
+if(user == ""){
+  console.log("cookie actual: Null");
+}else{
+ console.log("cookie actual: " + user);
+}
+
+});
+});
+
+// Este es el método que vamos a llamar
+// cada vez que se detecte una intersección
+function onScrollEvent(entries, observer) {
+  entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+          var attributes = entry.target.attributes;
+          var src = attributes['data-src'].textContent;
+          entry.target.src = src;
+          entry.target.classList.add('visible');
+      }
+  });
+}
+
+// Utilizamos como objetivos todos los
+// elementos que tengan la clase lazyLoad,
+// que vimos en el HTML de ejemplo.
+var targets = document.querySelectorAll('.lazyLoad');
+
+// Instanciamos un nuevo observador.
+var observer = new IntersectionObserver(onScrollEvent);
+
+// Y se lo aplicamos a cada una de las
+// imágenes.
+targets.forEach(function(entry) {
+  observer.observe(entry);
 });

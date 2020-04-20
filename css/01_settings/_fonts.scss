@@ -6,6 +6,7 @@
   url('../assets/fonts/Lato/Lato-Black.ttf') format('truetype'),
   url('../assets/fonts/Lato/Lato-Black.svg') format('svg');
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -15,7 +16,8 @@
   url('../assets/fonts/Lato/Lato-Bold.ttf') format('truetype'),
   url('../assets/fonts/Lato/Lato-Bold.svg') format('svg');
   font-weight: $bold;
-	font-style: normal;
+  font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -26,6 +28,7 @@
   url('../assets/fonts/Lato/Lato-Regular.svg') format('svg');
   font-style: normal;
   font-weight: $regular;
+  font-display: auto;
 }
 
 @font-face {
@@ -34,7 +37,8 @@
   src: local('☺'), url('../assets/fonts/Lato/Lato-Semibold.woff') format('woff'),
   url('fonts/Lato-Semibold.ttf') format('truetype'),
   url('fonts/Lato-Semibold.svg') format('svg');
-	font-style: normal;
+  font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -44,5 +48,6 @@
    url('../assets/fonts/Aleo/Aleo-Bold.ttf') format('truetype'),
     url('../assets/fonts/Aleo/Aleo-Bold.svg') format('svg');
 	font-weight: normal;
-	font-style: normal;
+  font-style: normal;
+  font-display: auto;
 }

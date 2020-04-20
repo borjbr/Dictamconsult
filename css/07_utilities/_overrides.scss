@@ -10,7 +10,7 @@ strong {font-weight: bold;}
   height: 90px;
   background-repeat: no-repeat;
   background-image: url("../assets/images/logo.png");
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-md) {
     height: 60px;
   }
 }

@@ -9,8 +9,11 @@
   &__content {
     position: relative;
     text-align: justify;
+    @media (max-width: $screen-md) {
+      text-align: left;
+    }
     h5{
-      margin: 14px 0;
+      margin: 20px 0;
       font-size: 16px;
       font-weight: bold;
       padding: 8px;
@@ -24,6 +27,9 @@
       li{
         margin-bottom: 4px;
         list-style-type: square;
+        @media (max-width: $screen-md) {
+          margin-bottom: 10px;
+          }
         }
       }
     }

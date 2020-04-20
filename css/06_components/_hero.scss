@@ -21,7 +21,7 @@
   &__title {
     text-align: right;
     margin-bottom: rem(16px);
-    font-family: $ff-aleoBold;
+    font-family: $ff-aleoBold, "Arial";
 
     @media (min-width: $screen-md) {
       margin-bottom: rem(36px);
@@ -165,3 +165,82 @@
     }
   }
 }
+
+
+.c-hero-mobile {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: $color-white;
+  position: relative;
+  overflow: hidden;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: $color-primary;
+    text-align: center;
+    font-family: 'AleoBold';
+  }
+  img {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-54%, 0);
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 2.5rem;
+    color: $color-black;
+  }
+  .c-button {
+    background-color: $color-primary;
+    color: #fff !important;
+    background-position: center;
+    transition: background 0.8s, opacity 0.5s;
+  }
+  &__inner {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    max-width: 900px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__title {
+    padding: 0 20px;
+    text-align: center;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__link {
+    text-align: center;
+    a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: "montserrat";
+      font-weight: 300;
+      font-size: .875rem;
+      max-width: 300px;
+      height: 46px;
+      background-color: transparent;
+      margin: auto;
+      }
+    }
+  }

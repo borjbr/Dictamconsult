@@ -22,32 +22,32 @@
     background-size: cover;
   }
   
-  &__info {
-    position:absolute;
-    display: table;
-    overflow:hidden;
-    width: 300px;
-    height: 300px;
-    background-color: $color-primary;
-    opacity:0;
-    transition: opacity 0.3s;
-    h4{
-      font-size: 21px;
-      font-weight: bold;
-      color: $color-white;
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%;
-      opacity: 1 !important;
-      margin: 0 auto;
-      text-align: center;
-      }
-    @media (max-width: $screen-md) {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-    }
-  }
+  // &__info {
+  //   position:absolute;
+  //   display: table;
+  //   overflow:hidden;
+  //   width: 300px;
+  //   height: 300px;
+  //   background-color: $color-primary;
+  //   opacity:0;
+  //   transition: opacity 0.3s;
+  //   h4{
+  //     font-size: 21px;
+  //     font-weight: bold;
+  //     color: $color-white;
+  //     display: table-cell;
+  //     vertical-align: middle;
+  //     width: 100%;
+  //     opacity: 1 !important;
+  //     margin: 0 auto;
+  //     text-align: center;
+  //     }
+  //   @media (max-width: $screen-md) {
+  //     position: absolute;
+  //     bottom: 0;
+  //     width: 100%;
+  //   }
+  // }
 
   &:hover .c-card-team__info {
     opacity: 0.75;
@@ -68,10 +68,13 @@
     bottom: 0;
     background: $color-primary;
     width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     color: #ffffff;
-    padding: 10px;
+    padding: 25px;
+    @media (max-width: $screen-md) {
+      padding: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
     h4 {
       font-size: 16px;
       margin-bottom: 4px;
@@ -101,6 +104,7 @@
     text-align: left;
     background-color: $color-white;
     display: table;
+    width: 100%;
     .icon {
       width: 20px;
       font-size: 21px;
@@ -114,7 +118,7 @@
         position: relative;
         text-align: left;
         &::before {
-          content: "\e908";
+          content: $icon-right;
           font-family: "iconFont";
           font-size: 18px;
           transform: rotate(90deg);
@@ -130,6 +134,7 @@
   .card-body {
     @media (max-width: $screen-md) {
       font-size: 13px;
+      text-align: justify;
     }
     ul {
       list-style-type: disc;

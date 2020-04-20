@@ -11,21 +11,28 @@
   }
 
   @media (min-width: $screen-md) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: table;
     padding: rem(32px);
   }
 
   &__title {
     padding-bottom: rem(16px);
+    text-align: center;
+    p {
+      margin-bottom: 0;
+      color: $color-primary;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: rem(48px);
+    }
 
     @media (min-width: $screen-md) {
       -webkit-box-flex: 1;
       -ms-flex: 1;
       flex: 1;
       padding-bottom: 0;
-      padding-right: rem(32px);
     }
   }
 
@@ -37,7 +44,7 @@
 
       p {
         padding-top: rem(20px);
-        color: $color-grey;
+        color: $color-black;
 
         &:first-of-type { padding-top: rem(40px); }
       }
@@ -58,6 +65,14 @@
       left: auto;
       right: 0;
     }
+  }
+  &::after {
+    content: url('../assets/images/modal-logo.jpg');
+    position: absolute;
+    top: 33%;
+    left: -27%;
+    height: 100px;
+    width: 100px;
   }
 
   &--right {

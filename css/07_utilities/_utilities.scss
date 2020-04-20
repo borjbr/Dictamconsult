@@ -175,11 +175,12 @@
 }
 
 .u-firma {
-  background-color: $color-primary;
+  background-color: $color-white;
   text-align: center;
   padding: 120px 0;
   @media (max-width: $screen-sm) {  
     padding: 60px 0;
+    background-color: $color-primary;
   }
   &-title {
     display: inline-block;
@@ -187,10 +188,11 @@
     margin-bottom: 40px;
     font-size: 48px;
     font-family: $ff-latoblack;
-    color: $color-white;
+    color: $color-black;
     @media (max-width: $screen-sm) {  
       font-size: 30px;
       margin-bottom: 30px;
+      color: $color-white;
     }
     &::before {
       content: '';
@@ -202,17 +204,37 @@
       top: -25px;
       @media (max-width: $screen-sm) {  
         left: 30px;
+        background-color: $color-white;
         }
       }
     }
   &-text {
-    color: $color-white;
+    color: $color-black;
+    text-align: justify;
     @media (max-width: $screen-sm) {  
       font-size: 12px;
+      color: $color-white;
     }
     strong {
       font-weight: bold;
     }
+  }
+}
+
+.u-firma--2col {
+  text-align: center;
+  background-color: $color-white;
+  color: $color-primary;
+  .u-firma-title {
+    color: $color-black;
+    &::before {
+      background-color: $color-primary;
+    }
+  }
+  .u-firma-text{
+    padding: 0 20px;
+    text-align: justify;
+    color: $color-primary;
   }
 }
 
@@ -278,10 +300,11 @@
   .tab-content {
     position: relative;
     background-color: $color-white;
-    text-align: left;
+    text-align: justify;
     padding: 48px 56px;
     &-title {
       font-size: 21px;
+      text-align: left;
       margin-bottom: 20px;
       font-weight:700;
     }
@@ -294,7 +317,7 @@
 
 .u-equipo {
   height: 800px;
-  background-image: url("../assets/images/bg-equipo.png");
+  background-image: url("../assets/images/bg-equipo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +393,7 @@
   }
   &-info {
     text-align: left;
-    @media (max-width: $screen-sm) {  
+    @media (max-width: $screen-md) {  
       margin-bottom: 30px;
     }
     &__title {
@@ -404,4 +427,43 @@
   &-map {
     margin-top: 32px;
   }
+}
+
+// Cookies 
+
+.barra-aceptacion-cookie{
+  background: $color-primary;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  padding: 16px;
+  font-size: 14px;
+  width: 100%;
+  z-index: 999999;
+  p{
+    color: $color-white;
+    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+  a, a:hover{
+    color: $color-grey-dark;
+  }
+}
+
+.btn-cookie {
+  padding: 4px;
+  color: $color-white;
+  width: 100px;
+  border: solid 1px $color-white;
+}
+
+
+.lazyLoad {
+  opacity: 0;
+}
+
+.visible {
+  transition: opacity 1000ms ease;
+  opacity: 1;
 }
