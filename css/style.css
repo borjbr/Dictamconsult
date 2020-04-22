@@ -2958,7 +2958,7 @@ p a:hover, p a:focus {
   transition: all ease 0.3s;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .c-support {
     display: none;
   }
@@ -3242,7 +3242,7 @@ p a:hover, p a:focus {
 
 @media (max-width: 576px) {
   .u-firma {
-    padding: 60px 0;
+    padding: 60px 0 20px 0;
     background-color: #4470a5;
   }
 }
@@ -3300,6 +3300,23 @@ p a:hover, p a:focus {
 .u-firma-video img {
   width: 100%;
   margin-top: 24px;
+}
+
+.u-firma-video p {
+  margin-top: 20px;
+  padding: 0 60px;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+
+@media (max-width: 576px) {
+  .u-firma-video p {
+    font-size: 12px;
+    padding: 0 10px;
+    text-align: justify;
+    color: #ffffff;
+  }
 }
 
 .u-firma-img__white {
@@ -3791,7 +3808,6 @@ strong {
 
 @media (max-width: 768px) {
   .modal-body__content {
-    text-align: left;
     font-size: 12px;
   }
 }

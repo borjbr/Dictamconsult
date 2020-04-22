@@ -22,6 +22,21 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="32x32">
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164253066-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164253066-1');
+
+
+</script>
+
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
@@ -175,6 +190,7 @@
         <p class="u-firma-text">La Firma apuesta por un trato directo, cercano y transparente cuyo trabajo parte de un estudio previo y detallado de las condiciones particulares del cliente y un análisis exhaustivo de sus necesidad legales, para posteriormente ofrecer un servicio jurídico de máxima calidad y eficiencia.</p>
         <div class="u-firma-video">
           <img src="assets/images/enlace-video.jpg" alt="enlace a video" title="video dictamconsult">
+          <p><i>La firma DICTAMCONSULT Abogados & Economistas pertenece a la sociedad DICTAMCONSULT, S.L.P. <br>(sociedad profesional inscrita en el Ilustre Colegio de Economistas de Madrid).</i></p>
         </div>
       </div>
     </section>

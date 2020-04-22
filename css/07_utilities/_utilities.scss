@@ -191,7 +191,7 @@
     }
   }
   @media (max-width: $screen-sm) {  
-    padding: 60px 0;
+    padding: 60px 0 20px 0;
     background-color: $color-primary;
   }
   &-title {
@@ -235,6 +235,19 @@
     img {
       width: 100%;
       margin-top: 24px;
+    }
+    p{
+      margin-top: 20px;
+      padding: 0 60px;
+      text-align: center;
+      position: relative;
+      z-index: 99;
+      @media (max-width: $screen-sm) {  
+        font-size: 12px;
+        padding: 0 10px;
+        text-align: justify;
+        color: $color-white;
+      }
     }
   }
   &-img__white {

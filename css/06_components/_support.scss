@@ -11,7 +11,7 @@
   margin:16px;
   @include transition();
 
-  @media (max-width: $screen-sm) {  
+  @media (max-width: $screen-md) {  
     display: none;
   }
 
