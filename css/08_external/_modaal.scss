@@ -11,6 +11,7 @@
     text-align: justify;
     @media (max-width: $screen-md) {
       text-align: left;
+      font-size: 12px;
     }
     h5{
       margin: 20px 0;
@@ -25,10 +26,12 @@
     ul{
       padding-left: 20px;
       li{
-        margin-bottom: 4px;
+        font-size: 13px;
+        margin-bottom: 12px;
         list-style-type: square;
         @media (max-width: $screen-md) {
           margin-bottom: 10px;
+          font-size: 12px;
           }
         }
       }

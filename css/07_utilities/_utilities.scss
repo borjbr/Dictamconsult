@@ -178,6 +178,18 @@
   background-color: $color-white;
   text-align: center;
   padding: 120px 0;
+  position: relative;
+  .container {
+    position: relative;
+    padding: 60px;
+    background-color: $color-grey;
+    @media (max-width: $screen-sm) {  
+      padding: 0 15px;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: transparent;
+    }
+  }
   @media (max-width: $screen-sm) {  
     padding: 60px 0;
     background-color: $color-primary;
@@ -200,7 +212,7 @@
       position: absolute;
       width: 40px;
       height: 4px;
-      background-color: $color-white;
+      background-color: $color-primary;
       top: -25px;
       @media (max-width: $screen-sm) {  
         left: 30px;
@@ -219,25 +231,26 @@
       font-weight: bold;
     }
   }
-}
-
-.u-firma--2col {
-  text-align: center;
-  background-color: $color-white;
-  color: $color-primary;
-  .u-firma-title {
-    color: $color-black;
-    &::before {
-      background-color: $color-primary;
+  &-video {
+    img {
+      width: 100%;
+      margin-top: 24px;
     }
   }
-  .u-firma-text{
-    padding: 0 20px;
-    text-align: justify;
-    color: $color-primary;
+  &-img__white {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+  }
+  &-img__gray {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    opacity: 0.5;
   }
 }
-
 
 .u-area {
   background-color: $color-grey;
@@ -260,7 +273,7 @@
     }
     &::before {
       content: '';
-      left: 140px;
+      left: 150px;
       position: absolute;
       width: 40px;
       height: 4px;

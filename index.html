@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,7 +12,6 @@
   <meta name="keywords" content="DICTAMCONSULT, abogados, derecho, fiscal, penal, " />
   <meta name="author" content="Borja Rincones" />
   <meta name="copyright" content="Borja Rincones" />
-
   <meta property="og:locale" content="es_ES" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="DICTAMCONSULT" />
@@ -21,7 +19,6 @@
     content="Despacho de abogados, economistas y auditores especializado en el ámbito concursal. La Firma también cuenta con áreas de derecho civil, fiscal y penal. En materia económica, nuestros expertos auditores están especializados en la realización de informes y periciales" />
   <meta property="og:url" content="https://www.dictamconsult.com" />
   <meta property="og:site_name" content="Dictamconsult" />
-
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="32x32">
@@ -30,19 +27,6 @@
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
   <!-- Title -->
   <h1 class="u-visuallyhidden">Página oficial Dictamconsult</h1>
-
-  <!--Skip content-->
-  <!-- <a href="#main" class="c-skip js-skip" title="Saltar al contenido">Saltar al contenido</a> -->
-
-  <!-- header -->
-  <!-- <div class="c-header-info">
-    <ul class="list-inline list-unstyled">
-      <li class="list-inline-item"><i class=""></i><strong>Teléfono: </strong><span>(+34) 699 155 303 / 914 092 706</span></li>
-      <li class="list-inline-item"><i class=""></i><strong>Email: </strong><span>contacto@Dictamconsult.com</span></li>
-      <li class="list-inline-item"><i class=""></i><strong>Dirección: </strong><span>C/Sainz de Baranda, 31 Bajo</span></li>
-    </ul>
-    <a class="c-header-info__icon" href=""><i class="icon icon-linkedin"></i></a>
-  </div> -->
 
   <!-- Política de cookies  -->
   <div class="barra-aceptacion-cookie" id="js_barra_aceptacion_cookie" style="display: none;">
@@ -181,31 +165,17 @@
 
     <!-- section firma-->
     <section id="firma" class="u-firma" data-aos="fade-top">
+      <img class="u-firma-img__white d-none d-lg-block" src="assets/images/water-gray.png" alt="dictamconsult" title="dictamconsult">
       <div class="container">
+      <img class="u-firma-img__gray d-none d-lg-block" src="assets/images/water-white.png" alt="dictamconsult" title="dictamconsult">
         <h2 class="u-firma-title">La Firma</h2>
-        <p class="u-firma-text"><strong>DICTAMCONSULT Abogados & Economistas</strong> es un despacho profesional que,
-          fundado en el año 2006, nace para dar cobertura legal a empresas y profesionales en situación concursal y
-          prestar asistencia a los distintos Juzgados de lo Mercantil.</p>
-        <p class="u-firma-text">En este sentido, la Firma cuenta con un equipo de profesionales experimentados en la
-          preparación de la documentación a presentar tanto por empresas como por particulares en situación de
-          insolvencia ante los Juzgados, y que se acompaña a la solicitud de concurso, al tiempo que, como sociedad
-          profesional debidamente acreditada e inscrita en los correspondientes listados oficiales,
-          <strong>DICTAMCONSULT Abogados & Economistas</strong> ha resultado designada por parte de los Juzgados de lo
-          Mercantil como Administradora Concursal en distintos procedimientos concursales, prestando un servicio
-          integral desde el mismo momento de su nombramiento y hasta el archivo del expediente.</p>
-        <p class="u-firma-text">Paralelamente, la Firma incorpora los departamentos de derecho penal, derecho fiscal y
-          tributario y derecho civil, lo que le permite tener una visión más global y estructurada de las distintas
-          situaciones económicas y jurídicas a las que se enfrentan particulares y empresas en el día a día de su
-          actividad profesional y personal.</p>
-        <p class="u-firma-text">Asimismo, <strong>DICTAMCONSULT Abogados & Economistas</strong> cuenta con expertos
-          economistas y auditores especializados en la elaboración de informes económicos y periciales de cualquier
-          tipo.</p>
-        <p class="u-firma-text">La Firma apuesta por un trato directo, cercano y transparente con el cliente. Para ello,
-          nuestro trabajo parte de un estudio detallado previo de las condiciones particulares del cliente y un análisis
-          exhaustivo de sus necesidad legales, para posteriormente ofrecer un servicio jurídico de máxima calidad y
-          eficiencia.</p>
-        <p class="u-firma-text">La <strong>firma DICTAMCONSULT Abogados & Economistas</strong> pertenece a la sociedad
-          DICTAMCONSULT, S.L.P. (sociedad profesional inscrita en el Ilustre Colegio de Economistas de Madrid).</p>
+        <p class="u-firma-text"><strong>DICTAMCONSULT Abogados & Economistas</strong> es un despacho profesional fundado en el años 2006 que nace para dar cobertura legal a empresas y profesionales en situación concursal y prestar asistencia a los distintos Juzgados de lo Mercantil.</p>
+        <p class="u-firma-text">En materia concursal, la Firma cuenta con un equipo de profesionales experimentados en la preparación de la documentación a presentar tanto por empresas como por particulares en situación de insolvencia ante los Juzgados (documentación que se acompaña a la solicitud de concurso). Además, como sociedad profesional debidamente acreditada e inscrita en los correspondientes listados oficiales, la Firma ha resultado designada a instancias de los Juzgados de lo Mercantil como Administradora Concursal en distintos procedimientos concursales, prestando un servicio integral desde el mismo momento de su nombramiento y hasta el archivo del expediente.</p>
+        <p class="u-firma-text">Paralelamente, la Firma incorpora los departamentos de derecho penal, derecho fiscal y tributario y derecho civil, lo que le permite tener una visión más global y estructurada de las distintas situaciones económicas y jurídicas a las que se enfrentan particulares y empresas en el día a día de su actividad profesional y personal. Asimismo, cuenta con expertos economistas y auditores especializados en la elaboración de informes económicos y periciales de cualquier tipo.</p>
+        <p class="u-firma-text">La Firma apuesta por un trato directo, cercano y transparente cuyo trabajo parte de un estudio previo y detallado de las condiciones particulares del cliente y un análisis exhaustivo de sus necesidad legales, para posteriormente ofrecer un servicio jurídico de máxima calidad y eficiencia.</p>
+        <div class="u-firma-video">
+          <img src="assets/images/enlace-video.jpg" alt="enlace a video" title="video dictamconsult">
+        </div>
       </div>
     </section>
 
@@ -264,20 +234,28 @@
               class="tab-content-img">
             <div class="tab-pane fade" id="nav-fiscal" role="tabpanel" aria-labelledby="nav-fiscal-tab">
               <h3 class="tab-content-title">Derecho Fiscal</h3>
-              <p>Con más de 20 años de asesoramiento en esta materia, el departamento concursal de <strong>DICTAMCONSULT
-                  Abogados & Economistas</strong> trae nombre al despacho y es el pionero dentro de los servicios que
-                prestamos en la firma.</p>
-              <p>Dentro de nuestro ámbito de actuación en materia concursal, la Firma cuenta con un equipo de
-                profesionales experimentados en la preparación de la documentación a presentar tanto por empresas como
-                por particulares en situación de insolvencia ante los Juzgados de lo Mercantil y que se acompaña a la
-                solicitud de concurso.</p>
-              <p>Asimismo, como sociedad profesional debidamente acreditada e inscrita en los correspondientes listados
-                oficiales, DICTAMCONSULT Abogados & Economistas ha resultado designada por parte de los Juzgados de lo
-                Mercantil como Administradora Concursal en distintos procedimientos concursales, prestando un servicio
-                integral desde el mismo momento de su nombramiento y hasta el archivo del expediente.</p>
-              <p>Todo ello complementado con sinergias establecidas con distintos profesionales vinculados a la materia,
-                lo que permite a la Firma agilizar la resolución de los procedimientos concursales en sus distintas
-                fases y situaciones.</p>
+              <p>La normativa tributaria es probablemente la materia jurídica mas cambiante del ordenamiento jurídico
+                español. Además, es cada vez mayor el importante papel que juega la Agencia Tributaria estos días. Por
+                ello, en <strong>DICTAMCONSULT Abogados & Economistas</strong> llevamos a cabo una diaria actualización
+                formativa para prestar a nuestros clientes el mejor asesoramiento fiscal posible.
+              </p>
+              <p>En este sentido, en <strong>DICTAMCONSULT Abogados & Economistas</strong> prestamos un asesoramiento
+                integral en materia tributaria, con especial dedicación a la imposición directa (tanto para persona
+                física como jurídica) y a la gestión de procedimientos tributarios ante los Órganos Administrativos de
+                Hacienda</p>
+              <p>Así, de cara a defender los intereses de nuestros clientes ante la Agencia Estatal de la Administración
+                Tributaria, junto con la presentación de los correspondientes modelos y declaraciones fiscales, en
+                <strong>DICTAMCONSULT Abogados & Economistas</strong> prestamos un servicio de asesoramiento tributario
+                previo donde destacamos:</p>
+              <ul>
+                <li>El Impuesto sobre la Renta (IRPF) y el Impuesto sobre el Patrimonio (IP)</li>
+                <li>El Impuesto sobre Sociedades (IS) y pagos fraccionados</li>
+                <li>Reestructuraciones patrimoniales</li>
+                <li>Confección de modelos declarativos y censales</li>
+                <li>El Impuesto sobre Sucesiones y Donaciones (ISD)</li>
+                <li>El Impuesto sobre la Renta de No Residentes (IRNR)</li>
+                <li>Asesoramiento previo de cualquier incentivo fiscal aplicable</li>
+              </ul>
             </div>
             <div class="tab-pane fade " id="nav-herencias" role="tabpanel" aria-labelledby="nav-herencias-tab">
               <h3 class="tab-content-title">Derecho Civil</h3>
@@ -335,28 +313,20 @@
             <div class="tab-pane fade show active" id="nav-concursal" role="tabpanel"
               aria-labelledby="nav-concursal-tab">
               <h3 class="tab-content-title">Derecho Concursal</h3>
-              <p>La normativa tributaria es probablemente la materia jurídica mas cambiante del ordenamiento jurídico
-                español. Además, es cada vez mayor el importante papel que juega la Agencia Tributaria estos días. Por
-                ello, en <strong>DICTAMCONSULT Abogados & Economistas</strong> llevamos a cabo una diaria actualización
-                formativa para prestar a nuestros clientes el mejor asesoramiento fiscal posible.
-              </p>
-              <p>En este sentido, en <strong>DICTAMCONSULT Abogados & Economistas</strong> prestamos un asesoramiento
-                integral en materia tributaria, con especial dedicación a la imposición directa (tanto para persona
-                física como jurídica) y a la gestión de procedimientos tributarios ante los Órganos Administrativos de
-                Hacienda</p>
-              <p>Así, de cara a defender los intereses de nuestros clientes ante la Agencia Estatal de la Administración
-                Tributaria, junto con la presentación de los correspondientes modelos y declaraciones fiscales, en
-                <strong>DICTAMCONSULT Abogados & Economistas</strong> prestamos un servicio de asesoramiento tributario
-                previo donde destacamos:</p>
-              <ul>
-                <li>El Impuesto sobre la Renta (IRPF) y el Impuesto sobre el Patrimonio (IP)</li>
-                <li>El Impuesto sobre Sociedades (IS) y pagos fraccionados</li>
-                <li>Reestructuraciones patrimoniales</li>
-                <li>Confección de modelos declarativos y censales</li>
-                <li>El Impuesto sobre Sucesiones y Donaciones (ISD)</li>
-                <li>El Impuesto sobre la Renta de No Residentes (IRNR)</li>
-                <li>Asesoramiento previo de cualquier incentivo fiscal aplicable</li>
-              </ul>
+              <p>Con más de 20 años de asesoramiento en esta materia, el departamento concursal de <strong>DICTAMCONSULT
+                  Abogados & Economistas</strong> trae nombre al despacho y es el pionero dentro de los servicios que
+                prestamos en la firma.</p>
+              <p>Dentro de nuestro ámbito de actuación en materia concursal, la Firma cuenta con un equipo de
+                profesionales experimentados en la preparación de la documentación a presentar tanto por empresas como
+                por particulares en situación de insolvencia ante los Juzgados de lo Mercantil y que se acompaña a la
+                solicitud de concurso.</p>
+              <p>Asimismo, como sociedad profesional debidamente acreditada e inscrita en los correspondientes listados
+                oficiales, DICTAMCONSULT Abogados & Economistas ha resultado designada por parte de los Juzgados de lo
+                Mercantil como Administradora Concursal en distintos procedimientos concursales, prestando un servicio
+                integral desde el mismo momento de su nombramiento y hasta el archivo del expediente.</p>
+              <p>Todo ello complementado con sinergias establecidas con distintos profesionales vinculados a la materia,
+                lo que permite a la Firma agilizar la resolución de los procedimientos concursales en sus distintas
+                fases y situaciones.</p>
             </div>
             <div class="tab-pane fade" id="nav-informes" role="tabpanel" aria-labelledby="nav-informes-tab">
               <h3 class="tab-content-title">Informes Económicos y Periciales</h3>
@@ -388,10 +358,10 @@
           <div id="accordion">
             <div class="card">
               <div class="card-header" id="headingOne">
-                <i class="icon icon-calculator"></i>
+                <i class="icon icon-analytics"></i>
                 <h5 class="mb-0">
                   <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">Derecho fiscal</button>
+                    aria-controls="collapseOne">Derecho Concursal</button>
                 </h5>
               </div>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -419,12 +389,11 @@
                 <i class="icon icon-strongbox"></i>
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">Herencias y sucesiones</button>
+                    aria-expanded="false" aria-controls="collapseTwo">Herencias y Sucesiones</button>
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
-                  <h3 class="tab-content-title">Derecho Civil</h3>
                   <p>En <strong>DICTAMCONSULT Abogados & Economistas</strong> sabemos que uno de los pilares básicos
                     para la sociedad española es la familia. Por ello, cuando tenemos un desagradable suceso en el
                     ámbito familiar necesitamos rodearnos de personas de confianza también en el ámbito del
@@ -491,16 +460,14 @@
             </div>
             <div class="card">
               <div class="card-header" id="headingThree">
-                <i class="icon icon-strongbox"></i>
+                <i class="icon icon-calculator"></i>
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                    aria-expanded="false" aria-controls="collapseThree">
-                    Derecho fiscal y tributario
-                  </button>
+                    aria-expanded="false" aria-controls="collapseThree">Derecho Fiscal y Tributario </button>
                 </h5>
               </div>
               <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
+                              <div class="card-body">
                   <p>La normativa tributaria es probablemente la materia jurídica mas cambiante del ordenamiento
                     jurídico español. Además, es cada vez mayor el importante papel que juega la Agencia Tributaria
                     estos días. Por ello, en <strong>DICTAMCONSULT Abogados & Economistas</strong> llevamos a cabo una
@@ -597,7 +564,6 @@
           <div class="col-sm-12 col-md-4" data-aos="fade-right">
             <a href="#" role="button" class="" data-toggle="modal" data-target="#equipo3">
               <div class="c-card-team c-card-team--03">
-
                 <div class="c-card-team__info-mobile">
                   <h4>Sergio Benítez</h4>
                   <hr>
@@ -829,9 +795,7 @@
                   </ul>
                   <h5>Trayectoria profesional</h5>
                   <ul>
-                    <li><strong>DICTAMCONSULT Abogados & Economistas</strong> (Madrid, 2006-Actualidad). Socio Director.
-                      Preparación de expedientes concursales y tramitación como administrador concursal y liquidador
-                      designado por los Juzgados Mercantiles. Economista - Perito Judicial</li>
+                    <li><strong>DICTAMCONSULT Abogados & Economistas</strong> (Madrid, 2014-Actualidad). Socio</li>
                     <li><strong>TURNO DE OFICIO,</strong> (Madrid, 2018-Actualidad). Abogado de derecho penal, delitos
                       leves, asistencia letrada al detenido, protección de victimas de delito, penal de menores,
                       procedimiento abreviado general e investigados por violencia de género</li>
@@ -852,6 +816,13 @@
                       Universidad Complutense de Madrid (UCM)</li>
                     <li>Experto universitario en <strong>Mediación Concursal y Protección de Datos</strong> por la
                       Universidad Nacional de Educación a Distancia (UNED)</li>
+                  </ul>
+                  <h5>Publicaciones y Docencia</h5>
+                  <ul>
+                    <li><strong>Profesor de Derecho Penal y Derecho Penitenciario.</strong>Universidad Rey Juan Carlos (URJC)</li>
+                    <li><strong>Profesor del Máster en Derecho Penal Económico</strong> y miembro de su Comisión de Garantía de Calidad de la Universidad Rey Juan Carlos (URJC)</li>
+                    <li><strong>Investigador de la Cátedra de Financiera y Forense</strong> KPMG-URJC</li>
+                    <li><strong>Autor de artículos y publicaciones</strong> relacionadas con el Derecho Penal y Penitenciario</li>
                   </ul>
                 </div>
               </div>
@@ -898,13 +869,13 @@
                   <ul>
                     <li><strong>DICTAMCONSULT Abogados & Economistas</strong> (Madrid, 2019-Actualidad). Socio</li>
                     <li><strong>KPMG Abogados</strong> (Madrid, 2017-2019). Asociado en el Departamento Fiscal de
-                      Sociedades (CTS)Asesoramiento tributario continuado a sociedades y grupos de sociedades en régimen
+                      Sociedades (CTS). Asesoramiento tributario continuado a sociedades y grupos de sociedades en régimen
                       de consolidación fiscal, tanto nacionales como internacionales</li>
                     <li><strong>RECLAMADOR.ES</strong> (Madrid, 2017). Implantación departamento tributario. Gestión de
                       procedimientos tributarios y expedientes de plusvalía municipal (IIVTNU)</li>
                     <li><strong>MAZARS Abogados</strong> (Madrid, 2014-2017). Asesoramiento tributario continuado a
                       personas físicas y jurídicas (IRPF, IS, IRNR, IVA, IIVTNU, ISD, etc)</li>
-                    <li><strong>Llorca</strong> (Madrid, 2013). Prácticas abogacía</li>
+                    <li><strong>Pérez Llorca</strong> (Madrid, 2013). Prácticas abogacía</li>
                   </ul>
                   <h5>Formación</h5>
                   <ul>
