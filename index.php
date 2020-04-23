@@ -149,7 +149,7 @@
 
 
   <!-- hero mobile -->
-  <section id="particles-js" class="c-hero-mobile d-block d-md-none">
+  <section id="particles-js" class="c-hero-mobile d-block d-sm-none">
     <!-- image -->
     <img src="assets/images/slide-mobile.jpg" alt="" role="presentation">
 

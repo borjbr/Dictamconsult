@@ -1,18 +1,25 @@
 
 @font-face {
   font-family: 'LatoBlack';
-  src: url('../assets/fonts/Lato/Lato-Black.eot'),
-  url('../assets/fonts/Lato/Lato-Black.ttf') format('truetype'),
-  url('../assets/fonts/Lato/Lato-Black.svg') format('svg');
-  font-style: normal;
+  src: url("../assets/fonts/Lato/Lato-Black.eot"); 
+  src: url("../assets/fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), 
+    url("../assets/fonts/Lato/Lato-Black.otf") format("opentype"), 
+    url("../assets/fonts/Lato/Lato-Black.svg") format("svg"), 
+    url("../assets/fonts/Lato/Lato-Black.ttf") format("truetype"), 
+    url("../assets/fonts/Lato/Lato-Black.woff") format("woff"), 
+    url("../assets/fonts/Lato/Lato-Black.woff2") format("woff2"); 
   font-display: auto;
 }
 
 @font-face {
 	font-family: 'LatoBold';
-	src: url('../assets/fonts/Lato/Lato-Bold.eot'),
-  url('../assets/fonts/Lato/Lato-Bold.ttf') format('truetype'),
-  url('../assets/fonts/Lato/Lato-Bold.svg') format('svg');
+  src: url("../assets/fonts/Lato/Lato-Bold.eot"); 
+  src: url("../assets/fonts/Lato/Lato-Bold.eot?#iefix") format("embedded-opentype"), 
+    url("../assets/fonts/Lato/Lato-Bold.otf") format("opentype"), 
+    url("../assets/fonts/Lato/Lato-Bold.svg") format("svg"), 
+    url("../assets/fonts/Lato/Lato-Bold.ttf") format("truetype"), 
+    url("../assets/fonts/Lato/Lato-Bold.woff") format("woff"), 
+    url("../assets/fonts/Lato/Lato-Bold.woff2") format("woff2"); 
   font-weight: $bold;
   font-style: normal;
   font-display: auto;
@@ -20,9 +27,13 @@
 
 @font-face {
 	font-family: 'LatoRegular';
-	src: url('../assets/fonts/Lato/Lato-Regular.eot'),
-  url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype'),
-  url('../assets/fonts/Lato/Lato-Regular.svg') format('svg');
+  src: url("../assets/fonts/Lato/Lato-Regular.eot"); 
+  src: url("../assets/fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Lato/Lato-Regular.otf") format("opentype"), 
+    url("../assets/fonts/Lato/Lato-Regular.svg") format("svg"),
+    url("../assets/fonts/Lato/Lato-Regular.ttf") format("truetype"), 
+    url("../assets/fonts/Lato/Lato-Regular.woff") format("woff"), 
+    url("../assets/fonts/Lato/Lato-Regular.woff2") format("woff2"); 
   font-style: normal;
   font-weight: $regular;
   font-display: auto;
@@ -30,19 +41,28 @@
 
 @font-face {
 	font-family: 'LatoSemibold';
-	src: url('../assets/fonts/Lato/Lato-Semibold.eot'),
-  url('fonts/Lato-Semibold.ttf') format('truetype'),
-  url('fonts/Lato-Semibold.svg') format('svg');
+  src: url('../assets/fonts/Lato/Lato-Semibold.eot'); 
+  src: url('../assets/fonts/Lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'), 
+    url('../assets/fonts/Lato/Lato-Semibold.otf') format('opentype'), 
+    url('../assets/fonts/Lato/Lato-Semibold.svg') format('svg'), 
+    url('../assets/fonts/Lato/Lato-Semibold.ttf') format('truetype'), 
+    url('../assets/fonts/Lato/Lato-Semibold.woff') format('woff'), 
+    url('../assets/fonts/Lato/Lato-Semibold.woff2') format('woff2'); 
   font-style: normal;
   font-display: auto;
 }
 
 @font-face {
 	font-family: 'AleoBold';
-	src: url('../assets/fonts/Aleo/Aleo-Bold.eot'),
-   url('../assets/fonts/Aleo/Aleo-Bold.ttf') format('truetype'),
-    url('../assets/fonts/Aleo/Aleo-Bold.svg') format('svg');
+  src: url('../assets/fonts/Aleo/Aleo-Bold.eot'),
+    url('../assets/fonts/Aleo/Aleo-Bold.eot?#iefix') format('embedded-opentype'), 
+    url('../assets/fonts/Aleo/Aleo-Bold.otf') format('opentype'), 
+    url('../assets/fonts/Aleo/Aleo-Bold.svg') format('svg'), 
+    url('../assets/fonts/Aleo/Aleo-Bold.ttf') format('truetype'), 
+    url('../assets/fonts/Aleo/Aleo-Bold.woff') format('woff'), 
+    url('../assets/fonts/Aleo/Aleo-Bold.woff2') format('woff2'); 
 	font-weight: normal;
   font-style: normal;
   font-display: auto;
 }
+
