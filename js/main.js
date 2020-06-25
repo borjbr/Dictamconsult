@@ -279,17 +279,3 @@ function onScrollEvent(entries, observer) {
       }
   });
 }
-
-// Utilizamos como objetivos todos los
-// elementos que tengan la clase lazyLoad,
-// que vimos en el HTML de ejemplo.
-var targets = document.querySelectorAll('.lazyLoad');
-
-// Instanciamos un nuevo observador.
-var observer = new IntersectionObserver(onScrollEvent);
-
-// Y se lo aplicamos a cada una de las
-// imágenes.
-targets.forEach(function(entry) {
-  observer.observe(entry);
-});

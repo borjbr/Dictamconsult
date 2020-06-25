@@ -8,7 +8,7 @@
     url("../assets/fonts/Lato/Lato-Black.ttf") format("truetype"), 
     url("../assets/fonts/Lato/Lato-Black.woff") format("woff"), 
     url("../assets/fonts/Lato/Lato-Black.woff2") format("woff2"); 
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -22,7 +22,7 @@
     url("../assets/fonts/Lato/Lato-Bold.woff2") format("woff2"); 
   font-weight: $bold;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -36,7 +36,7 @@
     url("../assets/fonts/Lato/Lato-Regular.woff2") format("woff2"); 
   font-style: normal;
   font-weight: $regular;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -49,7 +49,7 @@
     url('../assets/fonts/Lato/Lato-Semibold.woff') format('woff'), 
     url('../assets/fonts/Lato/Lato-Semibold.woff2') format('woff2'); 
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
@@ -63,6 +63,6 @@
     url('../assets/fonts/Aleo/Aleo-Bold.woff2') format('woff2'); 
 	font-weight: normal;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 

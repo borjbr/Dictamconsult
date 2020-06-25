@@ -188,6 +188,9 @@
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-54%, 0);
+    @media (max-width:345px) {
+      bottom: -90px;
+    }
   }
   p {
     font-size: 16px;
@@ -234,7 +237,6 @@
       justify-content: center;
       text-transform: uppercase;
       text-decoration: none;
-      font-family: "montserrat";
       font-weight: 300;
       font-size: .875rem;
       max-width: 300px;

@@ -19,7 +19,7 @@
     content="Despacho de abogados, economistas y auditores especializado en el ámbito concursal. La Firma también cuenta con áreas de derecho civil, fiscal y penal. En materia económica, nuestros expertos auditores están especializados en la realización de informes y periciales" />
   <meta property="og:url" content="https://www.dictamconsult.com" />
   <meta property="og:site_name" content="Dictamconsult" />
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="32x32">
 
@@ -149,18 +149,13 @@
 
 
   <!-- hero mobile -->
-  <section id="particles-js" class="c-hero-mobile d-block d-sm-none">
-    <!-- image -->
-    <img src="assets/images/slide-mobile.jpg" alt="" role="presentation">
-
+  <section class="c-hero-mobile d-block d-sm-none">
+    <img src="assets/images/slide-mobile.jpg"  alt="" role="presentation">
     <div class="c-hero-mobile__inner">
-      <!-- title -->
       <div class="c-hero-mobile__title">
         <h2>Calidad<br>y cercanía</h2>
         <p>Soluciones profesionales para tus necesidades jurídicas y empresariales</p>
       </div>
-
-      <!-- button -->
       <div class="c-hero-mobile__button">
         <a href="#contacto" class="c-button c-button--primary js-appear" title="Ir a conoce nuestra solución">Contacta
           con nosotros</a>
@@ -171,7 +166,6 @@
           <a href="https://www.youtube.com/embed/pikZTKHroFA" class="video" title="Ir a ver vídeo" data-modaal-scope="modaal_1587113185480b90c284d11e31"><i class="icon-play"></i>ver vídeo</a>
         </div>  -->
     </div>
-    <!-- <canvas class="particles-js-canvas-el" width="1242" height="2448" style="width: 100%; height: 100%;"></canvas> -->
   </section>
 
   <!-- main -->
@@ -189,8 +183,8 @@
         <p class="u-firma-text">Paralelamente, la Firma incorpora los departamentos de derecho penal, derecho fiscal y tributario y derecho civil, lo que le permite tener una visión más global y estructurada de las distintas situaciones económicas y jurídicas a las que se enfrentan particulares y empresas en el día a día de su actividad profesional y personal. Asimismo, cuenta con expertos economistas y auditores especializados en la elaboración de informes económicos y periciales de cualquier tipo.</p>
         <p class="u-firma-text">La Firma apuesta por un trato directo, cercano y transparente cuyo trabajo parte de un estudio previo y detallado de las condiciones particulares del cliente y un análisis exhaustivo de sus necesidad legales, para posteriormente ofrecer un servicio jurídico de máxima calidad y eficiencia.</p>
         <div class="u-firma-video">
-          <img src="assets/images/enlace-video.jpg" alt="enlace a video" title="video dictamconsult">
-          <p><i>La firma DICTAMCONSULT Abogados & Economistas pertenece a la sociedad DICTAMCONSULT, S.L.P. <br>(sociedad profesional inscrita en el Ilustre Colegio de Economistas de Madrid).</i></p>
+          <img src="assets/images/enlace-video.jpg"  alt="enlace a video" title="video dictamconsult">
+          <p><i>La firma DICTAMCONSULT Abogados & Economistas pertenece a la sociedad DICTAMCONSULT, S.L.P. <br class="d-none d-lg-block">(sociedad profesional inscrita en el Ilustre Colegio de Economistas de Madrid).</i></p>
         </div>
       </div>
     </section>
@@ -695,7 +689,7 @@
     <div class="container">
       <div class="c-footer-logo row">
         <div class="col-md-12">
-          <img src="assets/images/logo-white.png" title="dictamconsult" alt="logotipo Dictamconsult">
+          <img src="assets/images/logo-white.png"  title="dictamconsult" alt="logotipo Dictamconsult">
         </div>
       </div>
       <div class="c-footer-info row">
@@ -719,7 +713,7 @@
   <div class="modal fade" id="equipo1" tabindex="-1" role="dialog" aria-labelledby="team1" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
-        <img src="assets/images/modal-logo.jpg" title="dictamconsult" class="modal-image" alt="dictamconsult">
+        <img src="assets/images/modal-logo.jpg"  title="dictamconsult" class="modal-image" alt="dictamconsult">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">x</span>
@@ -934,14 +928,14 @@
     </div>
   </a>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/lib/headroom.min.js"></script>
-  <script src="js/lib/jQuery.headroom.js"></script>
-  <script src="js/lib/aos.js"></script>
-  <script src="js/lib/particles.js"></script>
-  <script src="js/lib/parsley.min.js"></script>
-  <script src="js/lib/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script async src="js/lib/headroom.min.js"></script>
+  <script async src="js/lib/jQuery.headroom.js"></script>
+  <script async src="js/lib/aos.js"></script>
+  <script async src="js/lib/particles.js"></script>
+  <script async src="js/lib/parsley.min.js"></script>
+  <script async src="js/lib/bootstrap.min.js"></script>
+  <script async src="js/main.js"></script>
 </body>
 
 </html>
